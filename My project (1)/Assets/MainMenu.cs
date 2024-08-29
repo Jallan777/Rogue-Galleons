@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame() 
     {
-        SceneManager.LoadSceneAsync(1); // load the game level
+        SceneManager.LoadSceneAsync("NameInput"); // load the game level
     
     }
 
