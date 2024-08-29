@@ -1,0 +1,2226 @@
+fileFormatVersion: 2
+guid: 574c7ffc98968d44490b9551fd805ab2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 340
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68bb3b78ae72494ba268a36967a4293
+      internalID: -1186874215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 348
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f923d827576b44946a70954f1d24d261
+      internalID: 1824993209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 339
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a2a282debfcbb4d98b99c19edf6565
+      internalID: -382782430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 340
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beafcf1998c5fc47b50ce83cd16b0c6
+      internalID: -796074769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 348
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea111c273e88d04cb062de0db83e031
+      internalID: -213332941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 339
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7798fd4cdee0e34fb84fce3505e8ba6
+      internalID: 1512540125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_6
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 340
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6811503ed8b1845a6e863198814c76
+      internalID: 1214923531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_7
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 348
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ac736ba2e05d74e8e8403f5f6130ac
+      internalID: 1147538146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 339
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad03d9eba97f0944d8fa8ebb0cec8bbe
+      internalID: -1371105695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 340
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4491ffc0d66f742419def0117c0f210c
+      internalID: 340175235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_10
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 348
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea0b2fb1873dde4ba9fe411f087c3eb
+      internalID: -1705169620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 339
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37028415dee7ecb4f97fd600c23c92bf
+      internalID: -772317787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 293
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e6fc391f3f4814db4ac63001bace15
+      internalID: -274243849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 295
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbeb3553ee26604591d19961e9c951d
+      internalID: 1250627613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 291
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6b3cc9d3ccbea4086a6ee5bc18b247
+      internalID: 1529931239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 293
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970adc5e5eea6ae44919ea6f2956e7e9
+      internalID: -1028903850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 295
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad0561ebfe29674e8217c5351e49817
+      internalID: -1795942523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 291
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d427d008eefac27448094e5e974dda7c
+      internalID: -429576022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_18
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 293
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cca75df510c3124facd7d93e865a7b8
+      internalID: -573816243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_19
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 295
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2981f7f9202653d4b945d9ce889c8c46
+      internalID: 1754732991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 291
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a213d23d462c584aad34be303c0ea6c
+      internalID: 631466138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_21
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 293
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ef8e09af4b0e047b013baa631ed114
+      internalID: 1205947635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_22
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 295
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fbfdc9744b0f5449255df9b06b093e
+      internalID: 2110092752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_23
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 291
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3a219e2e109ff44ba71cd08963992b
+      internalID: -1588160494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 245
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d95e9cdb02f7c44ab6a862656bf0fc
+      internalID: 957097250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 247
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672598c91b91d7843bf065addb615d74
+      internalID: -229012275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 243
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abac9b2d53a11b44f86b13815024fb2f
+      internalID: 1464276865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 245
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967f68c282a232c49902a66f221889f1
+      internalID: 634458594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 247
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf5a915251b24e48b8f2c84704fcf79
+      internalID: 474884851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_29
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 243
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32100bf7266638f408b4f2d2cb919819
+      internalID: 303489105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_30
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 245
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bc29445d8a6f541bdca5aba89ee85d
+      internalID: 1129731239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_31
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 247
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b643b8e9f2e6f4e98d40312ede332d
+      internalID: -314058524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_32
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 243
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976d4de6be7ec934fa3398b130bd338c
+      internalID: 1308477446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_33
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 245
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5009e6e707dabd24382541cb6a8976cc
+      internalID: 1736949568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_34
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 247
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786888fed88091f4c9216746e7abfe52
+      internalID: -715210716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_35
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 243
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4cc61f67da4f64c8bcf5023f978ab7
+      internalID: -197868158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 196
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08c633269c81ec45b257c7f896a8ac7
+      internalID: 677273100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 200
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eb93cc5f67f8343a33258a0b3757cc
+      internalID: -763533918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_38
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 195
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a46fd6c4f3af4889c583df75fb14e
+      internalID: -73388553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_39
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 196
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f417298dd69296499f2c25e0809c0b4
+      internalID: 1752819148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8468107185919848b069d30fe551891
+      internalID: 1776608661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_41
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 195
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a7befc2f20fb248af2035f69d30abc
+      internalID: -1766528940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_42
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 196
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be02ca691aa362441a386bb9e31dd347
+      internalID: -3513771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_43
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 200
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635f118c9b17ba64eb5d037880ed12cb
+      internalID: -1970508631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_44
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 195
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a7a601db8aa30459953aadf2e81f85
+      internalID: -1540333760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_45
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 196
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5f0f113c031b641b3bb7ff0595e623
+      internalID: 581873879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 200
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d985c435381149c46b7226ef45c5eb40
+      internalID: 605629536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_47
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 195
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc1008bbf935764da9d969974e197d8
+      internalID: 350687394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 148
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389f1c4a8accae842993731657999dc8
+      internalID: 1499567336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_49
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 156
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf9eae559cf2ac4d9feb97e58e4a3ce
+      internalID: 1834878863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 147
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb6fdab1cdcb2b4c8af12279c218e94
+      internalID: 861543531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_51
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 148
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b504485d8120641bbbb0f26990978d
+      internalID: 606954693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_52
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 156
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e373fd2a856b944a5c7a28634a3c1f
+      internalID: -404594531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_53
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 147
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d209870397f747a929e20fd05a97a
+      internalID: -1033685537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_54
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 148
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8506a8c5fe8333942ab48560dd7bc4c3
+      internalID: -1632115032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_55
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 156
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244020c900d5142499e339532fb37580
+      internalID: -1787464963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_56
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 147
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665b71edd6c4b0a46b9597dde8c6ccf4
+      internalID: -200801261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_57
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 148
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be23997e7d0b25b46a22398c3dbc2907
+      internalID: 49820981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_58
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 156
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939ab6c6bfc47de42bf25e8e8db7c91d
+      internalID: 1488468988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_59
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 147
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6e01e247f7f0a448da2667904fe438
+      internalID: 2051285359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_60
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 101
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ac8b182024fa743ab195b17889d370
+      internalID: -428010452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 103
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01628a879bd6fe449ae313f629b08dc
+      internalID: 930401964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_62
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 99
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f613ed770444b444ba6df596e06afb5
+      internalID: -190030753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_63
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 101
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadc0d8d1b817be4982c5574ec247ccf
+      internalID: -1051157948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_64
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 103
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6b54b1aa5ea414894b2fa975e20500
+      internalID: 2123902715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_65
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 99
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0806db28f52703c4b8c383d2129b7878
+      internalID: -2030302119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_66
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 101
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce95d89964d454e80dfcc87b27cebb
+      internalID: -1706046867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_67
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 103
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c245a076811cd419b60709dc8f0acd
+      internalID: 228075299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_68
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 99
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48945169b115a244da8ed4c68ae95d78
+      internalID: -1945709346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_69
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 101
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9ee357002ecb449996788f492c722b
+      internalID: 1639591680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_70
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 103
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377309819bd9659468f541600416d364
+      internalID: 1720120336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_71
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 99
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07323cbdb03153042a46de3915e33afc
+      internalID: 1406293608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 53
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b14ab6d5775f1d46944e94a9f334933
+      internalID: 1813857027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_73
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 55
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1b2af3f589ae04db20b5c002d78053
+      internalID: 478479866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_74
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 51
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3616f1f7e70555f43a61496fa6c51c9e
+      internalID: -1908010588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_75
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 53
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d73ca6bc5d2312488189f33d4d30148
+      internalID: -1281070492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_76
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 55
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32d4556e3f38a64da01506779961b97
+      internalID: 1575421164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_77
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 51
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0210757bcb88f4cbfbac44e176f910
+      internalID: 1568348018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_78
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 53
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40af5fb5ab9a70845805fa5322ac1244
+      internalID: 2055020725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_79
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 55
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dfd999fe0f3bc44a193011953ac2c2
+      internalID: -283337573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_80
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 51
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354f2228a59310048823efec8e1d73bb
+      internalID: 2055504485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_81
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 53
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e8725488013e44c94861be6c79051c
+      internalID: -353420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_82
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 55
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f95559b24914f4dbc15e7d311f5261
+      internalID: -1144528981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_83
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 51
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700ad20a3acd4374e913625100cb9419
+      internalID: 889878734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712d2bb1bd3a257489c09c34df547450
+      internalID: 29656309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_85
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b533d36a4f78fd43a0ff6958bf8b82f
+      internalID: 1229784916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_86
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434e5f3f5ccaab34a8a721bf3fbb511f
+      internalID: -124165688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_87
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e1d14861b79314db3b22f1060c934a
+      internalID: 1945174557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 8
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3f32b3316c5af45b18adc2df523358
+      internalID: 1804221518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_89
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93f7576d6bda1547990283133f6049d
+      internalID: -178394610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_90
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 4
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9239f3cb686ecab4f9a4f100d248df49
+      internalID: 1716528869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_91
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 8
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2acedc284a932489a79b74c23711f5
+      internalID: 808190335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_92
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f2dc2d1e75f5d439694e2e4c26b93e
+      internalID: 12691198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_93
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 4
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c1d1721e0b9764e92853aee6397ff6
+      internalID: -608193158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_94
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 8
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faa04de75427b54a840dadf6f877098
+      internalID: -127795274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_birds_by_schwarzenacht_dapf73v_95
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 3
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d3636f9aedbaf42a86fb0173b29ea8
+      internalID: -1771852268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mv_birds_by_schwarzenacht_dapf73v_0: -1186874215
+      mv_birds_by_schwarzenacht_dapf73v_1: 1824993209
+      mv_birds_by_schwarzenacht_dapf73v_10: -1705169620
+      mv_birds_by_schwarzenacht_dapf73v_11: -772317787
+      mv_birds_by_schwarzenacht_dapf73v_12: -274243849
+      mv_birds_by_schwarzenacht_dapf73v_13: 1250627613
+      mv_birds_by_schwarzenacht_dapf73v_14: 1529931239
+      mv_birds_by_schwarzenacht_dapf73v_15: -1028903850
+      mv_birds_by_schwarzenacht_dapf73v_16: -1795942523
+      mv_birds_by_schwarzenacht_dapf73v_17: -429576022
+      mv_birds_by_schwarzenacht_dapf73v_18: -573816243
+      mv_birds_by_schwarzenacht_dapf73v_19: 1754732991
+      mv_birds_by_schwarzenacht_dapf73v_2: -382782430
+      mv_birds_by_schwarzenacht_dapf73v_20: 631466138
+      mv_birds_by_schwarzenacht_dapf73v_21: 1205947635
+      mv_birds_by_schwarzenacht_dapf73v_22: 2110092752
+      mv_birds_by_schwarzenacht_dapf73v_23: -1588160494
+      mv_birds_by_schwarzenacht_dapf73v_24: 957097250
+      mv_birds_by_schwarzenacht_dapf73v_25: -229012275
+      mv_birds_by_schwarzenacht_dapf73v_26: 1464276865
+      mv_birds_by_schwarzenacht_dapf73v_27: 634458594
+      mv_birds_by_schwarzenacht_dapf73v_28: 474884851
+      mv_birds_by_schwarzenacht_dapf73v_29: 303489105
+      mv_birds_by_schwarzenacht_dapf73v_3: -796074769
+      mv_birds_by_schwarzenacht_dapf73v_30: 1129731239
+      mv_birds_by_schwarzenacht_dapf73v_31: -314058524
+      mv_birds_by_schwarzenacht_dapf73v_32: 1308477446
+      mv_birds_by_schwarzenacht_dapf73v_33: 1736949568
+      mv_birds_by_schwarzenacht_dapf73v_34: -715210716
+      mv_birds_by_schwarzenacht_dapf73v_35: -197868158
+      mv_birds_by_schwarzenacht_dapf73v_36: 677273100
+      mv_birds_by_schwarzenacht_dapf73v_37: -763533918
+      mv_birds_by_schwarzenacht_dapf73v_38: -73388553
+      mv_birds_by_schwarzenacht_dapf73v_39: 1752819148
+      mv_birds_by_schwarzenacht_dapf73v_4: -213332941
+      mv_birds_by_schwarzenacht_dapf73v_40: 1776608661
+      mv_birds_by_schwarzenacht_dapf73v_41: -1766528940
+      mv_birds_by_schwarzenacht_dapf73v_42: -3513771
+      mv_birds_by_schwarzenacht_dapf73v_43: -1970508631
+      mv_birds_by_schwarzenacht_dapf73v_44: -1540333760
+      mv_birds_by_schwarzenacht_dapf73v_45: 581873879
+      mv_birds_by_schwarzenacht_dapf73v_46: 605629536
+      mv_birds_by_schwarzenacht_dapf73v_47: 350687394
+      mv_birds_by_schwarzenacht_dapf73v_48: 1499567336
+      mv_birds_by_schwarzenacht_dapf73v_49: 1834878863
+      mv_birds_by_schwarzenacht_dapf73v_5: 1512540125
+      mv_birds_by_schwarzenacht_dapf73v_50: 861543531
+      mv_birds_by_schwarzenacht_dapf73v_51: 606954693
+      mv_birds_by_schwarzenacht_dapf73v_52: -404594531
+      mv_birds_by_schwarzenacht_dapf73v_53: -1033685537
+      mv_birds_by_schwarzenacht_dapf73v_54: -1632115032
+      mv_birds_by_schwarzenacht_dapf73v_55: -1787464963
+      mv_birds_by_schwarzenacht_dapf73v_56: -200801261
+      mv_birds_by_schwarzenacht_dapf73v_57: 49820981
+      mv_birds_by_schwarzenacht_dapf73v_58: 1488468988
+      mv_birds_by_schwarzenacht_dapf73v_59: 2051285359
+      mv_birds_by_schwarzenacht_dapf73v_6: 1214923531
+      mv_birds_by_schwarzenacht_dapf73v_60: -428010452
+      mv_birds_by_schwarzenacht_dapf73v_61: 930401964
+      mv_birds_by_schwarzenacht_dapf73v_62: -190030753
+      mv_birds_by_schwarzenacht_dapf73v_63: -1051157948
+      mv_birds_by_schwarzenacht_dapf73v_64: 2123902715
+      mv_birds_by_schwarzenacht_dapf73v_65: -2030302119
+      mv_birds_by_schwarzenacht_dapf73v_66: -1706046867
+      mv_birds_by_schwarzenacht_dapf73v_67: 228075299
+      mv_birds_by_schwarzenacht_dapf73v_68: -1945709346
+      mv_birds_by_schwarzenacht_dapf73v_69: 1639591680
+      mv_birds_by_schwarzenacht_dapf73v_7: 1147538146
+      mv_birds_by_schwarzenacht_dapf73v_70: 1720120336
+      mv_birds_by_schwarzenacht_dapf73v_71: 1406293608
+      mv_birds_by_schwarzenacht_dapf73v_72: 1813857027
+      mv_birds_by_schwarzenacht_dapf73v_73: 478479866
+      mv_birds_by_schwarzenacht_dapf73v_74: -1908010588
+      mv_birds_by_schwarzenacht_dapf73v_75: -1281070492
+      mv_birds_by_schwarzenacht_dapf73v_76: 1575421164
+      mv_birds_by_schwarzenacht_dapf73v_77: 1568348018
+      mv_birds_by_schwarzenacht_dapf73v_78: 2055020725
+      mv_birds_by_schwarzenacht_dapf73v_79: -283337573
+      mv_birds_by_schwarzenacht_dapf73v_8: -1371105695
+      mv_birds_by_schwarzenacht_dapf73v_80: 2055504485
+      mv_birds_by_schwarzenacht_dapf73v_81: -353420
+      mv_birds_by_schwarzenacht_dapf73v_82: -1144528981
+      mv_birds_by_schwarzenacht_dapf73v_83: 889878734
+      mv_birds_by_schwarzenacht_dapf73v_84: 29656309
+      mv_birds_by_schwarzenacht_dapf73v_85: 1229784916
+      mv_birds_by_schwarzenacht_dapf73v_86: -124165688
+      mv_birds_by_schwarzenacht_dapf73v_87: 1945174557
+      mv_birds_by_schwarzenacht_dapf73v_88: 1804221518
+      mv_birds_by_schwarzenacht_dapf73v_89: -178394610
+      mv_birds_by_schwarzenacht_dapf73v_9: 340175235
+      mv_birds_by_schwarzenacht_dapf73v_90: 1716528869
+      mv_birds_by_schwarzenacht_dapf73v_91: 808190335
+      mv_birds_by_schwarzenacht_dapf73v_92: 12691198
+      mv_birds_by_schwarzenacht_dapf73v_93: -608193158
+      mv_birds_by_schwarzenacht_dapf73v_94: -127795274
+      mv_birds_by_schwarzenacht_dapf73v_95: -1771852268
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
