@@ -1,26 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class VolumeController : MonoBehaviour
+public class VolumeControl : MonoBehaviour
 {
     public Slider volumeSlider;
     public AudioSource audioSource;
 
     void Start()
     {
-        //  default settings
-        float initialVolume = PlayerPrefs.GetFloat("VolumeLevel", 65.00f);
-        audioSource.volume = initialVolume;
-        volumeSlider.value = initialVolume;
-
-       
+        // Initialize the slider to match the current volume level
+        volumeSlider.value = audioSource.volume;
+        // Add a listener to handle value changes
         volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
-    //adjusting the volumn
-    public void SetVolume(float volume)
+    public void SetVolume(float sliderValue)
     {
-        audioSource.volume = volume;
-        PlayerPrefs.SetFloat("VolumeLevel", volume);
+        // Snap to specific volume levels (0%, 50%, 100%)
+        float snappedValue = Mathf.Round(sliderValue * 100) / 100; // This will snap to 0, 0.5, 1
+        audioSource.volume = snappedValue;
+        volumeSlider.value = snappedValue;
     }
+
 }
