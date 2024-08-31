@@ -1,31 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class VolumeControl : MonoBehaviour
+public class VolumeController : MonoBehaviour
 {
-    public AudioMixer audioMixer;
     public Slider volumeSlider;
+    public AudioSource audioSource;
 
-    // Start is called before the first frame update
     void Start()
     {
-        float currentVol;
-        audioMixer.GetFloat("MusicVolume", out currentVol);
-        volumeSlider.value = currentVol;
+        //  default settings
+        float initialVolume = PlayerPrefs.GetFloat("VolumeLevel", 65.00f);
+        audioSource.volume = initialVolume;
+        volumeSlider.value = initialVolume;
 
+       
         volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
-    public void SetVolume(float volume) {
-        audioMixer.SetFloat("MusicVolume", volume);
-    }
-    
-    // Update is called once per frame
-    void Update()
+    //adjusting the volumn
+    public void SetVolume(float volume)
     {
-        
+        audioSource.volume = volume;
+        PlayerPrefs.SetFloat("VolumeLevel", volume);
     }
 }
