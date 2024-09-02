@@ -8,18 +8,17 @@ public class VolumeControl : MonoBehaviour
 
     void Start()
     {
-        // Initialize the slider to match the current volume level
-        volumeSlider.value = audioSource.volume;
-        // Add a listener to handle value changes
+        // Set the slider to a value corresponding to a percentage (e.g., 65%)
+        volumeSlider.value = 65.0f;
+
+        // Add a listener to handle volume change
         volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
     public void SetVolume(float sliderValue)
     {
-        // Snap to specific volume levels (0%, 50%, 100%)
-        float snappedValue = Mathf.Round(sliderValue * 100) / 100; // This will snap to 0, 0.5, 1
-        audioSource.volume = snappedValue;
-        volumeSlider.value = snappedValue;
+        // Set the volume directly based on the slider's value normalized between 0 and 1
+        float normalizedValue = sliderValue / 100.0f;  // Converting from percentage (0 to 100) to the range Unity uses (0 to 1)
+        audioSource.volume = normalizedValue;
     }
-
 }
