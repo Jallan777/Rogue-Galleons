@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6236becb45c485841bda3b7735a7fc12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 35
+  moveSpeed: 60
   respawnDelay: 15
   startPoint: {x: 932, y: 373, z: -0.7505112}
   endPoint: {x: -185, y: 466, z: -0.7505112}
