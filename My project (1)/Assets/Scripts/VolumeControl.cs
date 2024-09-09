@@ -9,18 +9,18 @@ public class VolumeControl : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider volumeSlider;
 
+    public AudioSource musicSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        float currentVol;
-        audioMixer.GetFloat("MusicVolume", out currentVol);
-        volumeSlider.value = currentVol;
-
-        volumeSlider.onValueChanged.AddListener(SetVolume);
+ 
+ musicSource.volume = volumeSlider.value;
+ volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
     public void SetVolume(float volume) {
-        audioMixer.SetFloat("MusicVolume", volume);
+        musicSource.volume = volume;
     }
     
     // Update is called once per frame
