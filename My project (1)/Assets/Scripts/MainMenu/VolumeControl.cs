@@ -6,6 +6,7 @@ public class VolumeControl : MonoBehaviour
     public Slider volumeSlider;
     public AudioSource audioSource;
 
+
     void Start()
     {
         //default setting
