@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 
 
-public class contun : MonoBehaviour
+public class attack : MonoBehaviour
 {
 
-    public void contin()
+    public void attk()
     {
-        SceneManager.LoadSceneAsync("Ingame"); // load the game level
+        SceneManager.LoadSceneAsync("Combat"); // load the game level
 
     }
 

@@ -22,7 +22,4 @@ public class MainMenu : MonoBehaviour
     
     }
 
-
-
-   
 }

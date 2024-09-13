@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 
 
-public class contun : MonoBehaviour
+public class escape : MonoBehaviour
 {
 
-    public void contin()
+    public void esc()
     {
-        SceneManager.LoadSceneAsync("Ingame"); // load the game level
+        SceneManager.LoadSceneAsync("MainMenu"); // load the game level
 
     }
 
