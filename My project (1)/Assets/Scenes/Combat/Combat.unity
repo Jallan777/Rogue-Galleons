@@ -406,7 +406,8 @@ MonoBehaviour:
   cannonAttack: 0
   isActive: 0
   isCoolingDown: 0
-  coolDownTime: 0
+  setCoolDownTime: 5
+  currentCoolDownTime: 0
 --- !u!95 &513064900
 Animator:
   serializedVersion: 5
@@ -871,8 +872,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannonAttack: 0
   isActive: 0
-  isCoolingDown: 0
-  coolDownTime: 0
+  isCoolingDown: 1
+  setCoolDownTime: 5
+  currentCoolDownTime: 0
 --- !u!1 &858190229
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +961,6 @@ GameObject:
   - component: {fileID: 927309021}
   - component: {fileID: 927309020}
   - component: {fileID: 927309023}
-  - component: {fileID: 927309022}
   - component: {fileID: 927309024}
   m_Layer: 5
   m_Name: '@EnemyShip'
@@ -1036,34 +1037,6 @@ Transform:
   - {fileID: 513064902}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &927309022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927309019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da127b30703e469a9929178807cde47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onAttacking:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2126651726}
-        m_TargetAssemblyTypeName: Ship, Assembly-CSharp
-        m_MethodName: takeDamage
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  isAttacking: 0
 --- !u!114 &927309023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,6 +1067,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   shipType: 1
+  isAttacking: 0
+  launcher: {fileID: 0}
 --- !u!68 &927309024
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1179,7 +1154,7 @@ Transform:
   m_GameObject: {fileID: 1031718350}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.034795612, w: 0.9993945}
-  m_LocalPosition: {x: -2.8, y: 1.6, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0.06, z: 0}
   m_LocalScale: {x: 1.005777, y: 0.99428886, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1259,12 +1234,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df32ce87b814f2fbd9b2bf849027c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vol: 0
   rb: {fileID: 0}
   sr: {fileID: 0}
   stat: 0
   shipType: 0
   startingGlobalPosition: {x: 0, y: 0, z: 0}
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2126651726}
+        m_TargetAssemblyTypeName: Ship, Assembly-CSharp
+        m_MethodName: takeDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &1031718355
 Animator:
   serializedVersion: 5
@@ -1700,12 +1689,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df32ce87b814f2fbd9b2bf849027c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vol: 0
   rb: {fileID: 0}
   sr: {fileID: 0}
   stat: 0
   shipType: 0
   startingGlobalPosition: {x: 0, y: 0, z: 0}
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 927309023}
+        m_TargetAssemblyTypeName: Ship, Assembly-CSharp
+        m_MethodName: takeDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!50 &1495979042
 Rigidbody2D:
   serializedVersion: 4
@@ -2035,7 +2038,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1783053999}
   - component: {fileID: 1783053997}
-  - component: {fileID: 1783053998}
   m_Layer: 0
   m_Name: UI Camera
   m_TagString: Untagged
@@ -2094,14 +2096,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1783053998
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783053996}
-  m_Enabled: 1
 --- !u!4 &1783053999
 Transform:
   m_ObjectHideFlags: 0
@@ -2724,7 +2718,6 @@ GameObject:
   - component: {fileID: 2126651725}
   - component: {fileID: 2126651724}
   - component: {fileID: 2126651726}
-  - component: {fileID: 2126651727}
   - component: {fileID: 2126651728}
   m_Layer: 7
   m_Name: ///PlayerShip
@@ -2831,33 +2824,6 @@ MonoBehaviour:
   maxHealth: 500
   currentHealth: 0
   shipType: 0
---- !u!114 &2126651727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126651723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b59984564fba439db81c076c30a1d8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onAttacking:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 927309023}
-        m_TargetAssemblyTypeName: Ship, Assembly-CSharp
-        m_MethodName: takeDamage
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   isAttacking: 0
   launcher: {fileID: 0}
 --- !u!68 &2126651728

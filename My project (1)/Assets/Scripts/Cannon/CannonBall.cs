@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CannonBall : MonoBehaviour
 {
-    public bool vol;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
     public CannonBallStat stat;
     public ShipType shipType;
     public Vector3 startingGlobalPosition;
+    private CannonLauncher launcher;
+    public UnityEvent<Attack> onHit;
+    public Attack attack;
 
     private void Awake() {
+        this.launcher = this.GetComponentInParent<CannonLauncher>();
          this.rb = this.GetComponent<Rigidbody2D>();
          this.sr = this.GetComponent<SpriteRenderer>();
          this.shipType = this.GetComponentInParent<CannonLauncher>().GetComponentInParent<Ship>().shipType;
@@ -21,6 +25,7 @@ public class CannonBall : MonoBehaviour
     }
 
     public void BallReset(){
+        Awake();
         this.stat = CannonBallStat.SELF_SIDE;
         this.rb.constraints = RigidbodyConstraints2D.FreezeAll;
         this.rb.velocity = new Vector2(0,0);
@@ -36,15 +41,8 @@ public class CannonBall : MonoBehaviour
         }
     }
 
-    private void Update() {
-        if(vol){
-            vol = false;
-            Shoot();
-        }
-    }
-
-    private void Shoot(){
-        Debug.Log("Shooted");
+    public void Shoot(Attack attack){
+        this.attack = attack;
         rb.totalForce = new Vector2(0,0);
         this.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         this.sr.color = new Color(sr.color.r,sr.color.g,sr.color.b,1);
@@ -57,6 +55,7 @@ public class CannonBall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(this.stat == CannonBallStat.OPPOSITE_SIDE){
+            this.onHit.Invoke(this.attack);
             this.BallReset();
             return;
         }
