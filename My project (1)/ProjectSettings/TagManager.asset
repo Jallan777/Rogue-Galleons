@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Menu Effects
   - Player
-  - 
+  - Ammos
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: ShipItems
+    uniqueID: 1494416755
+    locked: 0
+  - name: Heroes
+    uniqueID: 3722012639
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
