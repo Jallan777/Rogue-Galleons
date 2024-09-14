@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CannonBall : MonoBehaviour
@@ -7,37 +8,71 @@ public class CannonBall : MonoBehaviour
     public bool vol;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
+    public CannonBallStat stat;
+    public ShipType shipType;
+    public Vector3 startingGlobalPosition;
+
     private void Awake() {
-        this.rb = this.GetComponent<Rigidbody2D>();
-        this.sr = this.GetComponent<SpriteRenderer>();
-    }
-    private void OnDisable() {
+         this.rb = this.GetComponent<Rigidbody2D>();
+         this.sr = this.GetComponent<SpriteRenderer>();
+         this.shipType = this.GetComponentInParent<CannonLauncher>().GetComponentInParent<Ship>().shipType;
+        this.stat = CannonBallStat.SELF_SIDE;
+
     }
 
-    public void Disable(Vector3 launcherPosition){
-        // this.enabled = false;
+    public void BallReset(){
+        this.stat = CannonBallStat.SELF_SIDE;
+        this.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        this.rb.velocity = new Vector2(0,0);
         this.sr.color = new Color(sr.color.r,sr.color.g,sr.color.b,0);
-        this.rb.simulated = false;
-        this.transform.position = launcherPosition +  new Vector3(0.5f,0.25f,0);
+        if(shipType == ShipType.PLAYER){
+            this.rb.rotation = 30;
+            this.transform.localPosition = new Vector3(0.5f,0.1f,0);
 
-    }
-
-    public void Enable(){
-        this.enabled = true;
-        this.rb.simulated = true;
-        this.sr.color = new Color(sr.color.r,sr.color.g,sr.color.b,1);
-        rb.AddForce(new Vector2(7,4),ForceMode2D.Impulse);
-
-    }
-    
-    private void Shoot(){
-
+        }
+        else{
+            this.rb.rotation = - 13.5f;
+            this.transform.localPosition = new Vector3(- 0.5f,0.1f,0);
+        }
     }
 
     private void Update() {
         if(vol){
             vol = false;
-            Enable();
+            Shoot();
         }
     }
+
+    private void Shoot(){
+        Debug.Log("Shooted");
+        rb.totalForce = new Vector2(0,0);
+        this.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        this.sr.color = new Color(sr.color.r,sr.color.g,sr.color.b,1);
+        if(this.shipType == ShipType.PLAYER)
+            rb.AddForceAtPosition(new Vector2(9,6),this.transform.localPosition,ForceMode2D.Impulse);
+        else
+            rb.AddForceAtPosition(new Vector2(- 9,6),this.transform.localPosition,ForceMode2D.Impulse);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(this.stat == CannonBallStat.OPPOSITE_SIDE){
+            this.BallReset();
+            return;
+        }
+        
+        if(this.shipType == ShipType.PLAYER){
+            this.transform.localPosition = new Vector3(7,2.5f,0);
+            this.rb.velocity = new Vector2(1,- 2);
+        }
+        else{
+            this.rb.velocity = Vector2.zero;
+            this.transform.localPosition = new Vector3(- 2.8f,3f,0);
+            rb.AddForce(new Vector2(- 4,5),ForceMode2D.Impulse);
+        }   
+
+        this.rb.rotation = -90;
+        this.stat = CannonBallStat.OPPOSITE_SIDE;
+    }
+
 }

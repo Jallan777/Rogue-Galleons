@@ -8,16 +8,16 @@ public class Player : MonoBehaviour
     public UnityEvent<Attack> onAttacking;
     [Header("Status")]
     public bool isAttacking;
+    public CannonLauncher launcher;
 
+    private void Awake() {
+        this.launcher = this.GetComponentInChildren<CannonLauncher>();
+    }
     private void Update() {
         if(isAttacking){
-            StartCoroutine(attackObject());
+            launcher.isActive = true;
+        }else{
+            launcher.isActive = false;
         }
-    }
-
-    public IEnumerator attackObject(){
-            onAttacking.Invoke(new Attack(20));
-            this.isAttacking = false;
-            return null;
     }
 }

@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundUI
+    uniqueID: 2640652811
+    locked: 0
   - name: ShipItems
     uniqueID: 1494416755
     locked: 0
