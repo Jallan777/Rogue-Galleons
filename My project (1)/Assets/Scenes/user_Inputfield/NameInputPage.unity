@@ -273,8 +273,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1866260566}
-        m_TargetAssemblyTypeName: contun, Assembly-CSharp
-        m_MethodName: contin
+        m_TargetAssemblyTypeName: continueButtonForInputScense, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

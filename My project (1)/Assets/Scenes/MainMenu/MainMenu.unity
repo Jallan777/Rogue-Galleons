@@ -203,7 +203,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 36907334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2de3978c80d9bf4cbd2b3f97e449332, type: 3}
+  m_Script: {fileID: 11500000, guid: 7869a9d4a6aee1741beed9c66bd3cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 259916129}
@@ -1616,8 +1616,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 60
   respawnDelay: 15
-  startPoint: {x: 932, y: 373, z: -0.7505112}
-  endPoint: {x: -185, y: 466, z: -0.7505112}
+  startXRange: {x: 0, y: 0}
+  startYRange: {x: 0, y: 0}
+  endXRange: {x: 0, y: 0}
+  endYRange: {x: 0, y: 0}
 --- !u!1 &511350953
 GameObject:
   m_ObjectHideFlags: 0
