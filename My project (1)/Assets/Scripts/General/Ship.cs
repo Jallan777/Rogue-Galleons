@@ -13,19 +13,27 @@ public class Ship : MonoBehaviour
     public float currentHealth;
     public ShipType shipType;
 
-
+    [Header("Status")]
+    public bool isAttacking;
+    public CannonLauncher launcher;
 
     private void Awake() {
         this.currentHealth = this.maxHealth;
+        this.launcher = this.GetComponentInChildren<CannonLauncher>();
+
     }
 
     public void takeDamage(Attack attack){
         this.currentHealth -= attack.attackDamage;
         OnTakingDamage.Invoke(this);
-    }
+    }    
 
     private void Update() {
-        
+        if(isAttacking){
+            launcher.isActive = true;
+        }else{
+            launcher.isActive = false;
+        }
     }
 
 }
