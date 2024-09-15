@@ -7,14 +7,14 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: fly
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4364262592141602525}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_Position: {x: 200, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5918167291134760177}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_Position: {x: 280, y: 100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -36,7 +36,7 @@ AnimatorController:
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: fly
     m_StateMachine: {fileID: -2306028028143908264}
     m_Mask: {fileID: 0}
     m_Motions: []
