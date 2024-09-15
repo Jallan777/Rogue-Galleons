@@ -6,6 +6,18 @@ public class VolumeControl : MonoBehaviour
     public Slider volumeSlider;
     public AudioSource audioSource;
 
+    public AudioSource musicSource;
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    // Start is called before the first frame update
 
     void Start()
     {
