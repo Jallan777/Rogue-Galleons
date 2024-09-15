@@ -3,8 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class continu : MonoBehaviour
+public class continueButtonForInputScense : MonoBehaviour
 {
-   //SceneManager.LoadSceneAsync(1);
+       public void PlayGame() 
+    {
+
+      int randChoice = Random.Range(0,2);
+
+      if(randChoice == 0) {
+         SceneManager.LoadSceneAsync("LandingScene"); // load the game level
+      }
+      else{
+         SceneManager.LoadSceneAsync("PeacefulSea"); // load the game level
+
+      }
+       
+    
+    }
+        
   
 }

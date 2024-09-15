@@ -6,11 +6,26 @@ public class MusicController : MonoBehaviour
 {
 
     private AudioSource audioSource;
+    public GameObject musicObject;
 
+private static MusicController instance;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
+
+        if(instance == null) {
+            instance = this;
+
+            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(musicObject);
+
+            audioSource = musicObject.GetComponent<AudioSource>();
+        }
+        else {
+            Destroy(gameObject);
+            Destroy(musicObject);
+        }
         
     }
 
@@ -28,6 +43,10 @@ public class MusicController : MonoBehaviour
 
     public void VolSet(float volume) {
         audioSource.volume = volume;
+    }
+
+    public void SetTrackPos(float time) {
+        audioSource.time = time;
     }
     // Update is called once per frame
     void Update()
