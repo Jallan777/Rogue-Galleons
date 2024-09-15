@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 462261587}
   m_Layer: 7
   m_Name: Button
+
   - component: {fileID: 513064902}
   - component: {fileID: 513064901}
   - component: {fileID: 513064900}
@@ -397,6 +398,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+
 --- !u!224 &462261586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -418,6 +420,8 @@ RectTransform:
   m_SizeDelta: {x: 160.413, y: 54.427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462261587
+
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,6 +479,7 @@ MonoBehaviour:
         m_CallState: 2
 --- !u!114 &462261588
 MonoBehaviour:
+
   m_GameObject: {fileID: 513064898}
   m_Enabled: 1
   m_EditorHideFlags: 0
