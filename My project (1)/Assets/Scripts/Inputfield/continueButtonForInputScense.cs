@@ -1,25 +1,40 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class continueButtonForInputScense : MonoBehaviour
 {
-       public void PlayGame() 
+    public float delay = 0.1f; 
+
+    public void PlayGame()
+    {
+        StartCoroutine(delayScene());
+    }
+
+    IEnumerator delayScene()
     {
 
-      int randChoice = Random.Range(0,2);
+        yield return new WaitForSeconds(delay);
 
-      if(randChoice == 0) {
-         SceneManager.LoadSceneAsync("LandingScene"); // load the game level
-      }
-      else{
-         SceneManager.LoadSceneAsync("PeacefulSea"); // load the game level
+ 
+        int randChoice = Random.Range(0, 4);
 
-      }
-       
-    
+        if (randChoice == 0)
+        {
+            SceneManager.LoadSceneAsync("LandingScene");  
+        }
+        if (randChoice == 1)
+        {
+            SceneManager.LoadSceneAsync("PeacefulSea");   
+        }
+        if (randChoice == 2)
+        {
+            SceneManager.LoadSceneAsync("ingame 1");   
+        }
+        if (randChoice == 3)
+        {
+            SceneManager.LoadSceneAsync("ingame 2");
+
+        }
     }
-        
-  
 }
