@@ -27,7 +27,8 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Welcome <b>"+ input + "</b>";
             resultText.color = Color.blue;
-
+            PlayerPrefs.SetString("PlayerName", input);
+            PlayerPrefs.Save();
         }
 
     }
