@@ -6,9 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/2dRogueGalleons.unity
+    path: Assets/Scenes/MainMenu/MainMenu.unity
     guid: 252d06f0268c44f4681222b5f1e9c340
   - enabled: 1
-    path: Assets/NameInput.unity
+    path: Assets/Scenes/user_Inputfield/NameInputPage.unity
     guid: 6aa1d4aa346814e0d8b4e7e916cd449d
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/EventScene1.unity
+    guid: 3f67193298302b345b8c34ad8c1868e5
+  - enabled: 1
+    path: Assets/Scenes/AchievementScenes/AchievementScenes.unity
+    guid: 9f6bd3f387752184aaeb41aa46db29a0
+  - enabled: 1
+    path: Assets/Scenes/LandingScene.unity
+    guid: ec66cbc6e3cceee4db1febcab351db03
+  - enabled: 1
+    path: Assets/Scenes/PeacefulSea.unity
+    guid: 92e24de2158e8764996190636dd01cd7
+  - enabled: 1
+    path: Assets/Scenes/Combat/Combat.unity
+    guid: 7de4a208254a74106861b3891ed01596
+
   m_configObjects: {}
