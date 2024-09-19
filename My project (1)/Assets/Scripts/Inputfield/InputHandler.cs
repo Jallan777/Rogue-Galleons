@@ -7,6 +7,17 @@ public class InputHandler : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
+    void Start()
+    {
+        // Load the saved input from PlayerPrefs if it exists
+        if (PlayerPrefs.HasKey("PlayerName"))
+        {
+            string savedName = PlayerPrefs.GetString("PlayerName");
+            inputField.text = savedName; // Optionally set it in the InputField
+            resultText.text = "Welcome back, <b>" + savedName + "</b>";
+            resultText.color = Color.blue;
+        }
+    }
 
 
     public void VaildateInput()
