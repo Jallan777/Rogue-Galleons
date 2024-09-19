@@ -10,24 +10,24 @@ public class MuteButton : MonoBehaviour
 
     void Start()
     {
-        //muteButton.gameObject.SetActive(true);
-        //unmuteButton.gameObject.SetActive(false);
+        unmuteButton.gameObject.SetActive(false);
+        muteButton.gameObject.SetActive(true);
 
 
         muteButton.onClick.AddListener(Mute);
         unmuteButton.onClick.AddListener(Unmute);
     }
 
-    void ToggleMute()
-    {
-        isMuted = !isMuted;
-        audioSource.mute = isMuted;
-    }
+    //void ToggleMute()
+    //{
+    //    isMuted = !isMuted;
+    //    audioSource.mute = isMuted;
+    //}
 
     void Mute()
     {
-        muteButton.gameObject.SetActive(false);
-        unmuteButton.gameObject.SetActive(true);
+        //muteButton.gameObject.SetActive(false);
+        //unmuteButton.gameObject.SetActive(true);
 
         isMuted = true;
         audioSource.mute = isMuted;
@@ -37,8 +37,8 @@ public class MuteButton : MonoBehaviour
 
     void Unmute()
     { 
-        muteButton.gameObject.SetActive(true);
-        unmuteButton.gameObject.SetActive(false);
+        //muteButton.gameObject.SetActive(true);
+        //unmuteButton.gameObject.SetActive(false);
         isMuted = false;
         audioSource.mute = isMuted;
 

@@ -28,7 +28,7 @@ public class MusicPlayer : MonoBehaviour
  
     void randomPlay()
      {
-         randomNum = Random.Range(1, 11);
+         randomNum = Random.Range(0, 12);
          state = (int)randomNum; 
          audioSource.clip = clip[state-1];
          audioSource.Play();
