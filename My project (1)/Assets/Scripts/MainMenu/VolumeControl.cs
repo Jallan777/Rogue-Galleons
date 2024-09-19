@@ -12,6 +12,7 @@ public class VolumeControl : MonoBehaviour
 
 
     public AudioSource musicSource;
+    private GameObject musicObject;
 
     private void OnEnable()
     {
@@ -27,6 +28,7 @@ public class VolumeControl : MonoBehaviour
     void Start()
     {
  
+        
          if(volumeSlider != null)
          {
             musicSource.volume = volumeSlider.value;
@@ -36,8 +38,27 @@ public class VolumeControl : MonoBehaviour
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-{
+    {
     // Find the active Canvas first
+    GameObject newMusicObject = GameObject.Find("BG_Music");
+
+    if (newMusicObject != null)
+    {
+        AudioSource newAudioSource = newMusicObject.GetComponent<AudioSource>();
+        if(newAudioSource != null)
+        {
+            musicSource = newAudioSource;
+        }
+        else
+        {
+            Debug.Log("No AudioSource found on BG_Music");
+        }
+    }
+    else
+    {
+        Debug.LogError("BG_Music not found in the scene.");
+    }
+
     GameObject canvas = GameObject.Find("Canvas");
 
     if (canvas != null)

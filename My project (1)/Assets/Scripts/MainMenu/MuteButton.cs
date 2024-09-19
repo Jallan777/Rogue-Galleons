@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MuteButton : MonoBehaviour
 {
@@ -8,40 +9,32 @@ public class MuteButton : MonoBehaviour
     public AudioSource audioSource;
     private bool isMuted = false;
 
+
     void Start()
     {
         unmuteButton.gameObject.SetActive(false);
         muteButton.gameObject.SetActive(true);
 
-
         muteButton.onClick.AddListener(Mute);
         unmuteButton.onClick.AddListener(Unmute);
     }
 
-    //void ToggleMute()
-    //{
-    //    isMuted = !isMuted;
-    //    audioSource.mute = isMuted;
-    //}
+    
 
     void Mute()
     {
-        //muteButton.gameObject.SetActive(false);
-        //unmuteButton.gameObject.SetActive(true);
-
         isMuted = true;
         audioSource.mute = isMuted;
-
-
+        muteButton.gameObject.SetActive(false);
+        unmuteButton.gameObject.SetActive(true);
     }
 
     void Unmute()
-    { 
-        //muteButton.gameObject.SetActive(true);
-        //unmuteButton.gameObject.SetActive(false);
+    {
         isMuted = false;
         audioSource.mute = isMuted;
-
-
+        muteButton.gameObject.SetActive(true);
+        unmuteButton.gameObject.SetActive(false);
     }
+    
 }
