@@ -12,6 +12,12 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(LoadSceneAfterDelay("NameInputPage", 0.1f));
     }
 
+    public void returnGame()
+    {
+
+        StartCoroutine(LoadSceneAfterDelay("MainMenu", 0.1f));
+    }
+
     public void QuitGame()
     {
         Application.Quit();
