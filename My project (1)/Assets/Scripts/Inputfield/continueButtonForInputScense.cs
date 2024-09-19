@@ -17,7 +17,7 @@ public class continueButtonForInputScense : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
  
-        int randChoice = Random.Range(0, 4);
+        int randChoice = Random.Range(0, 7);
 
         if (randChoice == 0)
         {
@@ -34,6 +34,21 @@ public class continueButtonForInputScense : MonoBehaviour
         if (randChoice == 3)
         {
             SceneManager.LoadSceneAsync("ingame 2");
+
+        }
+        if (randChoice == 4)
+        {
+            SceneManager.LoadSceneAsync("Combat");
+
+        }
+        if (randChoice == 5)
+        {
+            SceneManager.LoadSceneAsync("Combat");
+
+        }
+        if (randChoice == 6)
+        {
+            SceneManager.LoadSceneAsync("Combat");
 
         }
     }
