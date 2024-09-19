@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BGFX
   - Water
   - UI
   - Menu Effects
-  - 
-  - 
+  - Player
+  - Ammos
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundUI
+    uniqueID: 2640652811
+    locked: 0
+  - name: ShipItems
+    uniqueID: 1494416755
+    locked: 0
+  - name: Heroes
+    uniqueID: 3722012639
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
