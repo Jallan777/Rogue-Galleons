@@ -36,4 +36,11 @@ public class Ship : MonoBehaviour
         }
     }
 
+    public void setAttackStat(){
+        if(isAttacking)
+            isAttacking = false;
+        else
+            isAttacking=true;    
+    }
+
 }
