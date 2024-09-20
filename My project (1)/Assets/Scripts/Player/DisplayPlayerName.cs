@@ -15,9 +15,16 @@ public class DisplayPlayerName : MonoBehaviour
     {
         playerName = PlayerPrefs.GetString("PlayerName");
 
-        
-        
+        if(playerName == null)
+        {
+            resultText.text = "<b>Player 1</b>";
+        }
+        else
+        {
             resultText.text = "<b>"+ playerName.ToUpper() + "</b>";
+
+        }
+        
             resultText.color = Color.black;
 
         
