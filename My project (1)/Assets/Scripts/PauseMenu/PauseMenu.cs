@@ -7,31 +7,39 @@ public class PauseMenu : MonoBehaviour
 {
 
     public bool isPaused;
-    public bool isButtonPause;
-    public bool noButtonResume;
+
+    public GameObject settingPanel;
+    public GameObject achPanel;
+    public GameObject tutorialPanel;
+
+
+
     [SerializeField] GameObject pauseMenu;
 
     void Update()
     {
 
-        
-        
-            if (Input.GetKeyDown(KeyCode.Escape)) // Corrected KeyCode
+
+
+        if (Input.GetKeyDown(KeyCode.Escape)) // Corrected KeyCode
+        {
+            if(settingPanel.activeSelf || achPanel.activeSelf || tutorialPanel.activeSelf)
+            {
+                return;
+            }
+
+            if (isPaused)
             {
 
-                if (isPaused && noButtonResume)
-                {
-
-                    Resume();
-                }
-                else
-                {
-                    isButtonPause = true;
-                    Pause();
-                }
-
+                Resume();
             }
-        
+            else
+            {
+                Pause();
+            }
+
+        }
+
 
 
 
@@ -61,7 +69,6 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Setting Panel");
         Time.timeScale = 1; // Resume time for new scene
-        noButtonResume = true;
 
     }
 }

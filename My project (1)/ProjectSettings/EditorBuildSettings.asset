@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ingame/2/ingame 2.unity
     guid: a9c297d9e7c0e1e4388ef68d4fb50cd7
+  - enabled: 1
+    path: Assets/Scenes/NighttimeSea.unity
+    guid: 61b00dfc82d7d6545bdc1acf143aa1b6
   m_configObjects: {}

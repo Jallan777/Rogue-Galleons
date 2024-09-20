@@ -12,39 +12,16 @@ public class continueButtonForInputScense : MonoBehaviour
    {
       contButton.interactable = false;
 
-      if(!string.IsNullOrEmpty(PlayerPrefs.GetString("PlayerName")))
+      if (!string.IsNullOrEmpty(PlayerPrefs.GetString("PlayerName")))
       {
          contButton.interactable = true;
       }
    }
-       public void PlayGame() 
-    {
-      int randChoice = Random.Range(0,4);
+   public void PlayGame()
+   {
+      SceneManager.LoadSceneAsync("LandingScene"); // load the game level
 
-      
-      
-          if(randChoice == 0) {
-             SceneManager.LoadSceneAsync("LandingScene"); // load the game level
-          }
-          else if(randChoice == 1)
-          {
-             SceneManager.LoadSceneAsync("ingame 1"); // load the game level
+   }
 
-          }
-          else if(randChoice == 2)
-          {
-             SceneManager.LoadSceneAsync("ingame 2"); // load the game level
 
-          }
-          else{
-            SceneManager.LoadSceneAsync("PeacefulSea"); // load the game level
-
-          }
-      
-
-       
-    
-    }
-        
-  
 }

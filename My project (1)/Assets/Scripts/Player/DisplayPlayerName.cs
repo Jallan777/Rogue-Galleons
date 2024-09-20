@@ -30,4 +30,10 @@ public class DisplayPlayerName : MonoBehaviour
         
 
     }
+
+    public void Update()
+    {
+        playerName = PlayerPrefs.GetString("PlayerName");
+
+    }
 }
