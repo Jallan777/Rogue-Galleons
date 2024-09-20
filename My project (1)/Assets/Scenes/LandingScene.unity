@@ -1614,18 +1614,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1712772826}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 107341703}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Pause
@@ -5326,7 +5314,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObj: {fileID: 1712772826}
   eventText: {fileID: 1778238376}
+  contButton: {fileID: 288416722}
   delayTime: 0.02
+  betweenTime: 0.5
 --- !u!1 &1078159719
 GameObject:
   m_ObjectHideFlags: 0
