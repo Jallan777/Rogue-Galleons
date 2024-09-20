@@ -5469,9 +5469,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contButton: {fileID: 1601912831}
   sceneNames:
-  - PeacefulSea
+  - Combat
   - ingame 1
   - ingame 2
+  - PeacefulSea
   - NighttimeSea
 --- !u!1 &1078159719
 GameObject:

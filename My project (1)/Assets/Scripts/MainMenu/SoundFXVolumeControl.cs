@@ -36,12 +36,21 @@ public class SoundFXVolumeControl : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
     // Find the active Canvas first
-    GameObject canvas = GameObject.Find("Canvas");
+    GameObject canvasOrUI = null;
 
-    if (canvas != null)
+    if(scene.name == "Combat")
+        {
+            canvasOrUI = GameObject.Find("#UI");
+        }
+        else
+        {
+            canvasOrUI = GameObject.Find("Canvas");
+        }
+
+    if (canvasOrUI != null)
     {
         // Find the Settings Panel (inactive) inside the Canvas
-        Transform settingsPanel = canvas.transform.Find("Setting Panel");
+        Transform settingsPanel = canvasOrUI.transform.Find("Setting Panel");
 
         if (settingsPanel != null)
         {
@@ -68,12 +77,12 @@ public class SoundFXVolumeControl : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Setting Panel not found in Canvas.");
+            Debug.LogError("Setting Panel not found.");
         }
     }
     else
     {
-        Debug.LogError("Canvas not found in the scene.");
+            Debug.LogError((scene.name == "Combat" ? "UI" : "Canvas") + " not found in the scene.");
     }
 }
 

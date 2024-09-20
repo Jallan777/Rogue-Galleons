@@ -7046,6 +7046,7 @@ MonoBehaviour:
   - ingame 1
   - ingame 2
   - NighttimeSea
+  - Combat
 --- !u!1 &1350214781
 GameObject:
   m_ObjectHideFlags: 0
