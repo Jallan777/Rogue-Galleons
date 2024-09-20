@@ -10,29 +10,30 @@ public class MusicPlayer : MonoBehaviour
     int state;
 
     // Use this for initialization
-     void Start()
+    void Start()
     {
-       randomPlay();
+        randomPlay();
     }
-    
-     // Update is called once per frame
-     void Update()
+
+    // Update is called once per frame
+    void Update()
     {
 
-        if (!audioSource.isPlaying) {
+        if (!audioSource.isPlaying)
+        {
 
             randomPlay();
         }
 
-     }
- 
+    }
+
     void randomPlay()
-     {
-         randomNum = Random.Range(0, 12);
-         state = (int)randomNum; 
-         audioSource.clip = clip[state-1];
-         audioSource.Play();
-       
+    {
+        randomNum = Random.Range(1, 13);
+        state = (int)randomNum;
+        audioSource.clip = clip[state - 1];
+        audioSource.Play();
+
     }
 
 }
