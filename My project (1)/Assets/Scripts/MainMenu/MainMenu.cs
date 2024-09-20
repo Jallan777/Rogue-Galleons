@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
     public void returnGame()
     {
 
-        StartCoroutine(LoadSceneAfterDelay("MainMenu", 0.1f));
+        StartCoroutine(LoadSceneAfterDelay("MainMenu", 0.2f));
     }
 
     public void QuitGame()
