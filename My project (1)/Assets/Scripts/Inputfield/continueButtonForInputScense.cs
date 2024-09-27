@@ -7,20 +7,25 @@ using UnityEngine.SceneManagement;
 public class continueButtonForInputScense : MonoBehaviour
 {
    public Button contButton;
+   private string playerName;
+   //public string name;
 
    void Start()
    {
-      contButton.interactable = false;
-
-      if (!string.IsNullOrEmpty(PlayerPrefs.GetString("PlayerName")))
-      {
-         contButton.interactable = true;
-      }
+      playerName = PlayerPrefs.GetString("PlayerName");
    }
    public void PlayGame()
    {
-      SceneManager.LoadSceneAsync("LandingScene"); // load the game level
+      if(playerName.Length > 0)
+      {
+         SceneManager.LoadSceneAsync("LandingScene"); // load the game level
+      }
 
+   }
+
+   void Update()
+   {
+      playerName = PlayerPrefs.GetString("PlayerName");
    }
 
 

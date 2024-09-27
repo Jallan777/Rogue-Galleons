@@ -21,5 +21,8 @@ public class StatusBar : MonoBehaviour
         if(healthDelay.fillAmount != healthFill.fillAmount){
             healthDelay.fillAmount -= Time.deltaTime * 0.5f;
         }
+
+        PlayerPrefs.SetFloat("PlayerHealth", (healthFill.fillAmount * 500));
+        PlayerPrefs.Save();
     }
 }
