@@ -8,24 +8,29 @@ public class DisplayPlayerHealth : MonoBehaviour
 {
 
     private float playerHealth;
-    [SerializeField] Text resultText;
+    public Image healthBarFill;
+    public Image healthBarRedFill;
 
+    [SerializeField] Text resultText;
 
     public void Start()
     {
-        playerHealth = PlayerPrefs.GetFloat("PlayerHealth", 500);
+        playerHealth = PlayerPrefs.GetFloat("PlayerHealth");
 
-     
-            resultText.text =  playerHealth.ToString();   
-            resultText.color = Color.black;
+        healthBarFill.fillAmount = playerHealth / 500;
+        healthBarRedFill.fillAmount = playerHealth / 500;
+        resultText.text = playerHealth.ToString();
+        resultText.color = Color.black;
 
-        
+
 
     }
 
     public void Update()
     {
-        playerHealth = PlayerPrefs.GetFloat("PlayerHealth", 500);
+        playerHealth = healthBarFill.fillAmount * 500;
+        PlayerPrefs.SetFloat("PlayerHealth", playerHealth);
+        PlayerPrefs.Save();
         resultText.text = playerHealth.ToString();
 
     }

@@ -22,7 +22,7 @@ public class StatusBar : MonoBehaviour
             healthDelay.fillAmount -= Time.deltaTime * 0.5f;
         }
 
-        PlayerPrefs.SetFloat("PlayerHealth", (healthFill.fillAmount * 500));
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetFloat("PlayerHealth", (healthFill.fillAmount * 500));
+       //PlayerPrefs.Save();
     }
 }

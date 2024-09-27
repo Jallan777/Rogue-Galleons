@@ -38,9 +38,11 @@ public class InputHandler : MonoBehaviour
             resultText.color = Color.blue;
 
             PlayerPrefs.SetString("PlayerName", input);
+            PlayerPrefs.SetFloat("PlayerHealth", 500);
             PlayerPrefs.Save();
             isNamed = true;
         }
+
 
     }
 
