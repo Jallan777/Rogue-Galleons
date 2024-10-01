@@ -4073,6 +4073,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7213721881622210218, guid: 81cf319a2ae0cfd41a782bccb8fc3829, type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: c282d3bf50e9501488c050ae9cc3be2f, type: 3}
+    - target: {fileID: 7213721881622210218, guid: 81cf319a2ae0cfd41a782bccb8fc3829, type: 3}
       propertyPath: mouseFollower
       value: 
       objectReference: {fileID: 1980927787}
@@ -12436,7 +12440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 743240574}
-  inventorySize: 10
+  inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
 --- !u!114 &2098526800
 MonoBehaviour:
   m_ObjectHideFlags: 0
