@@ -1,25 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class continueButtonForInputScense : MonoBehaviour
 {
-       public void PlayGame() 
-    {
+   public Button contButton;
+   private string playerName;
+   //public string name;
 
-      int randChoice = Random.Range(0,2);
-
-      if(randChoice == 0) {
+   void Start()
+   {
+      playerName = PlayerPrefs.GetString("PlayerName");
+   }
+   public void PlayGame()
+   {
+      if(playerName.Length > 0)
+      {
          SceneManager.LoadSceneAsync("LandingScene"); // load the game level
       }
-      else{
-         SceneManager.LoadSceneAsync("PeacefulSea"); // load the game level
 
-      }
-       
-    
-    }
-        
-  
+   }
+
+   void Update()
+   {
+      playerName = PlayerPrefs.GetString("PlayerName");
+   }
+
+
 }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:My project (1)/Assets/Scenes/user_Inputfield/NameInputPage.unity.meta
 guid: 6aa1d4aa346814e0d8b4e7e916cd449d
+========
+guid: fe9c783a8fda35d4ca3a7339bd3830f6
+>>>>>>>> Vincent-Menu:My project (1)/Assets/UI_Button_Art/GameInputControllerIconsFree/game-input-controller-icons-free-scene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

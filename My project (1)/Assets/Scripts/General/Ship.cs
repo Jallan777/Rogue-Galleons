@@ -18,7 +18,19 @@ public class Ship : MonoBehaviour
     public CannonLauncher launcher;
 
     private void Awake() {
-        this.currentHealth = this.maxHealth;
+
+        if(shipType == ShipType.ENEMY)
+        {
+            isAttacking = true;
+            this.currentHealth = this.maxHealth;
+        }
+        else
+        {
+            this.currentHealth = PlayerPrefs.GetFloat("PlayerHealth");
+
+        }
+
+        //this.currentHealth = this.maxHealth;
         this.launcher = this.GetComponentInChildren<CannonLauncher>();
 
     }
@@ -34,6 +46,13 @@ public class Ship : MonoBehaviour
         }else{
             launcher.isActive = false;
         }
+    }
+
+    public void setAttackStat(){
+        if(isAttacking)
+            isAttacking = false;
+        else
+            isAttacking=true;    
     }
 
 }

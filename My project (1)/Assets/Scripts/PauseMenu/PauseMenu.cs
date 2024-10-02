@@ -5,30 +5,51 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    
+
     public bool isPaused;
+
+    public GameObject settingPanel;
+    public GameObject achPanel;
+    public GameObject tutorialPanel;
+
+
+
     [SerializeField] GameObject pauseMenu;
 
     void Update()
     {
+
+
+
         if (Input.GetKeyDown(KeyCode.Escape)) // Corrected KeyCode
         {
+            if(settingPanel.activeSelf || achPanel.activeSelf || tutorialPanel.activeSelf)
+            {
+                return;
+            }
+
             if (isPaused)
             {
+
                 Resume();
             }
             else
             {
                 Pause();
             }
+
         }
+
+
+
+
     }
 
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
-        isPaused = true; 
+        isPaused = true;
     }
 
     public void Home()
@@ -48,7 +69,6 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Setting Panel");
         Time.timeScale = 1; // Resume time for new scene
-     
 
     }
 }

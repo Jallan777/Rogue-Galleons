@@ -1,28 +1,31 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
-
 
 public class MainMenu : MonoBehaviour
 {
 
-    public void PlayGame() 
+
+    public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("NameInputPage"); // load the game level
-    
+      
+        StartCoroutine(LoadSceneAfterDelay("NameInputPage", 0.1f));
     }
 
-    public void QuitGame() 
+    public void returnGame()
+    {
+
+        StartCoroutine(LoadSceneAfterDelay("MainMenu", 0.2f));
+    }
+
+    public void QuitGame()
     {
         Application.Quit();
-    
     }
 
-
-
-   
+    IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadSceneAsync(sceneName);
+    }
 }

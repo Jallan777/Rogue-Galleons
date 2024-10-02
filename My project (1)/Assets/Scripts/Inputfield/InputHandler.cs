@@ -7,19 +7,17 @@ public class InputHandler : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
-    void Start()
+
+    public bool isNamed;
+
+    public void Start()
     {
-        // Load the saved input from PlayerPrefs if it exists
-        if (PlayerPrefs.HasKey("PlayerName"))
-        {
-            string savedName = PlayerPrefs.GetString("PlayerName");
-            inputField.text = savedName; // Optionally set it in the InputField
-            resultText.text = "Welcome back, <b>" + savedName + "</b>";
-            resultText.color = Color.blue;
-        }
+
+        PlayerPrefs.SetString("PlayerName", null);
+        PlayerPrefs.Save();
+        isNamed = false;
+
     }
-
-
     public void VaildateInput()
     {
         string input = inputField.text;
@@ -38,9 +36,18 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Welcome <b>"+ input + "</b>";
             resultText.color = Color.blue;
+
             PlayerPrefs.SetString("PlayerName", input);
+            PlayerPrefs.SetFloat("PlayerHealth", 500);
             PlayerPrefs.Save();
+            isNamed = true;
         }
+
+
+    }
+
+    public void Update()
+    {
 
     }
 }
