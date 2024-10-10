@@ -17,6 +17,8 @@ public class Ship : MonoBehaviour
     public bool isAttacking;
     public CannonLauncher launcher;
 
+
+    public GameObject success;
     private void Awake() {
         this.currentHealth = this.maxHealth;
         this.launcher = this.GetComponentInChildren<CannonLauncher>();
@@ -25,6 +27,9 @@ public class Ship : MonoBehaviour
 
     public void takeDamage(Attack attack){
         this.currentHealth -= attack.attackDamage;
+
+        print(currentHealth);
+        if (currentHealth<=0) { success.SetActive(true); }
         OnTakingDamage.Invoke(this);
     }    
 
