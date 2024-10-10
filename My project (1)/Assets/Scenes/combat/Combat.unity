@@ -11978,6 +11978,7 @@ GameObject:
   - component: {fileID: 2016231465}
   - component: {fileID: 2016231468}
   - component: {fileID: 2016231469}
+  - component: {fileID: 2016231470}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -12159,6 +12160,7 @@ MonoBehaviour:
   InitialItems:
   - quantity: 2
     item: {fileID: 11400000, guid: 0ebba44f6ec2d2f41a17527d1651a6c7, type: 2}
+    itemState: []
 --- !u!114 &2016231469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12172,6 +12174,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
+--- !u!114 &2016231470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016231462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f8a85d5f3131945aaf6eb4c90be285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
+  parametersToModify:
+  - itemParameter: {fileID: 11400000, guid: 6ad3b3c8a133bb4449a5a2d09c267367, type: 2}
+    value: -10
+  itemCurrentState: []
 --- !u!1 &2021783362
 GameObject:
   m_ObjectHideFlags: 0
@@ -12287,6 +12307,99 @@ RectTransform:
   m_AnchoredPosition: {x: -19, y: 1}
   m_SizeDelta: {x: -1731.0735, y: -1027.1912}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &2044198564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2151134050890412294, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_Name
+      value: Item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.718
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.516
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558745623195934907, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076607114721894384, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_Radius
+      value: 0.056638837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076607114721894384, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.014138937
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076607114721894384, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0073371334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209194534733166687, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: <Quantity>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209194534733166687, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: <InventoryItem>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 1c460f13abf81284ab59a59160586e2b, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
 --- !u!1 &2056511972
 GameObject:
   m_ObjectHideFlags: 0
@@ -13366,6 +13479,10 @@ PrefabInstance:
       value: 0.0073371334
       objectReference: {fileID: 0}
     - target: {fileID: 8209194534733166687, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: <Quantity>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209194534733166687, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
       propertyPath: <InventoryItem>k__BackingField
       value: 
       objectReference: {fileID: 11400000, guid: 0ebba44f6ec2d2f41a17527d1651a6c7, type: 2}
@@ -13389,3 +13506,4 @@ SceneRoots:
   - {fileID: 2016231464}
   - {fileID: 1851165299}
   - {fileID: 4973640155349339021}
+  - {fileID: 2044198564}

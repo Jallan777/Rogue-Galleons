@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace Inventory.Model
 {
-   
+
 
     public abstract class ItemSO : ScriptableObject
     {
@@ -27,7 +28,19 @@ namespace Inventory.Model
         public Sprite ItemImage { get; set; }
 
 
+        [field: SerializeField]
+        public  List<ItemParameter> DefaultParametersList { get; set; }
+    }
+    [Serializable]
+    public struct ItemParameter : IEquatable<ItemParameter>
+    {
+        public ItemParameterSO itemParameter;
+        public float value;
 
+        public bool Equals(ItemParameter other)
+        {
+            return other.itemParameter == itemParameter;
+        }
     }
 
 }
