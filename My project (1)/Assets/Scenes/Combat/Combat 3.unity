@@ -6055,6 +6055,9 @@ MonoBehaviour:
   shipType: 1
   isAttacking: 0
   launcher: {fileID: 0}
+  maxShield: 50
+  currentShield: 0
+  RechargeTime: 20
 --- !u!68 &927309024
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -13875,6 +13878,7 @@ GameObject:
   - component: {fileID: 2126651726}
   - component: {fileID: 2126651728}
   - component: {fileID: 2126651729}
+  - component: {fileID: 2126651730}
   m_Layer: 7
   m_Name: ///PlayerShip
   m_TagString: Untagged
@@ -13982,6 +13986,9 @@ MonoBehaviour:
   shipType: 0
   isAttacking: 0
   launcher: {fileID: 0}
+  maxShield: 50
+  currentShield: 0
+  RechargeTime: 20
 --- !u!68 &2126651728
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -14082,6 +14089,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.2936454, y: 1.3799307}
   m_EdgeRadius: 0
+--- !u!114 &2126651730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126651723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724d940d7748ba94f911800df972fff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxShield: 50
+  rechargeTime: 20
 --- !u!1 &2145689511
 GameObject:
   m_ObjectHideFlags: 0

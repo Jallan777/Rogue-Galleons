@@ -1,9 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI; // Optional, if you want to show shield status on the UI
 
 public class ShieldSystem : MonoBehaviour
 {
-    public int maxShieldPoints = 200;    // Maximum shield capacity
+    public int maxShield =50;    // Maximum shield capacity
     private int currentShieldPoints;     // Current shield strength
     public float rechargeTime = 20f;     // Time in seconds to fully recharge
     private float rechargeRate;          // How much to recharge per second
@@ -11,14 +12,14 @@ public class ShieldSystem : MonoBehaviour
 
     void Start()
     {
-        currentShieldPoints = maxShieldPoints;
-        rechargeRate = maxShieldPoints / rechargeTime;
+        currentShieldPoints = maxShield;
+        rechargeRate = maxShield / rechargeTime;
     }
 
     void Update()
     {
         // If the shield is not full, start recharging
-        if (currentShieldPoints < maxShieldPoints && !isRecharging)
+        if (currentShieldPoints < maxShield && !isRecharging)
         {
             StartCoroutine(RechargeShield());
         }
@@ -43,12 +44,12 @@ public class ShieldSystem : MonoBehaviour
         isRecharging = true;
 
         // Gradually recharge the shield over time
-        while (currentShieldPoints < maxShieldPoints)
+        while (currentShieldPoints < maxShield)
         {
             currentShieldPoints += Mathf.CeilToInt(rechargeRate * Time.deltaTime);
-            if (currentShieldPoints > maxShieldPoints)
+            if (currentShieldPoints > maxShield)
             {
-                currentShieldPoints = maxShieldPoints;
+                currentShieldPoints = maxShield;
             }
             yield return null; // Wait for the next frame
         }
