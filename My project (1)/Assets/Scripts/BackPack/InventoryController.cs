@@ -59,7 +59,22 @@ namespace Inventory
 
         private void HandleItemActionRequest(int itemIndex)
         {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+            IItemAction itemAction = inventoryItem.item as IItemAction;
 
+            if (itemAction != null)
+            {
+                itemAction.PerformAction(gameObject);
+            
+            }
+   IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
+            if (destroyableItem != null)
+            {
+
+                inventoryData.RemoveItem(itemIndex, 1);
+            }
         }
 
 
