@@ -20,6 +20,12 @@ namespace Inventory
 
         public List<InventoryItem > InitialItems = new List<InventoryItem>();
 
+        [SerializeField]
+        private AudioClip dropClip; 
+        
+        [SerializeField]
+        private AudioSource audioSource;
+
         private void Start()
         {
             PrepareUI();
@@ -65,6 +71,38 @@ namespace Inventory
                 return;
          
 
+            
+            IItemAction itemAction = inventoryItem.item as IItemAction;
+            if (itemAction != null)
+            {
+                
+                inventoryUI.ShowItemAction(itemIndex);
+
+                inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
+            }
+            IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
+            if (destroyableItem != null)
+            {
+
+                inventoryUI.AddAction("Drop", () => DropItem(itemIndex, inventoryItem.quantity));
+            }
+
+        }
+
+        private void DropItem(int itemIndex, int quantity)
+        {
+            inventoryData.RemoveItem(itemIndex, quantity);
+            inventoryUI.ResetSelection();
+            audioSource.PlayOneShot(dropClip);
+        }
+
+        public void PerformAction(int itemIndex) {
+
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+
+
             IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
             if (destroyableItem != null)
             {
@@ -76,12 +114,11 @@ namespace Inventory
             if (itemAction != null)
             {
                 itemAction.PerformAction(gameObject, inventoryItem.itemState);
-            
+                audioSource.PlayOneShot(itemAction.actionSFX);
+                if (inventoryData.GetItemAt(itemIndex).IsEmpty)
+                    inventoryUI.ResetSelection();
             }
-  
         }
-
-
 
         private void HandleDragging(int itemIndex)
         {
