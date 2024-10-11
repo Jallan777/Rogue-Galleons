@@ -24,6 +24,12 @@ public class Ship : MonoBehaviour
     public bool isAttacking;
     public CannonLauncher launcher;
 
+    [Header("Shield Parameters")]
+    public float maxShield = 75f;
+    public float currentShield;
+    public float RechargeTime = 10f;
+    private bool isRecharging = false;
+
     private void Awake()
     {
 
@@ -48,7 +54,7 @@ public class Ship : MonoBehaviour
         float damage = attack.attackDamage;
 
         // If there is shield available, absorb damage first
-        if (currentShield > 0)
+        if (isRecharging == false)
         {
             float shieldAbsorbed = Mathf.Min(currentShield, damage); // Absorb as much damage as the shield can
             currentShield -= shieldAbsorbed; // Reduce the shield amount
@@ -98,11 +104,6 @@ public class Ship : MonoBehaviour
             isAttacking = true;
     }
 
-    [Header("Shield Parameters")]
-    public float maxShield = 50f;
-    public float currentShield;
-    public float RechargeTime = 20f;
-    private bool isRecharging = false;
 
     private IEnumerator RechargeShield()
     {
