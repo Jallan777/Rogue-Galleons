@@ -32,12 +32,8 @@ namespace Inventory.UI
 
         public event Action<int, int> OnSwapItems;
 
-<<<<<<< HEAD
         [SerializeField]
         private ItemActionPanel actionPanel;
-=======
-
->>>>>>> testMain
 
         private void Awake()
         {
@@ -71,16 +67,12 @@ namespace Inventory.UI
 
         private void HandleShowItemActions(UIInventoryItem inventoryItemUI)
         {
-<<<<<<< HEAD
             int index = listOfUIItems.IndexOf(inventoryItemUI);
             if (index == -1)
             {
                 return;
             }
             OnItemActionRequested?.Invoke(index);
-=======
-
->>>>>>> testMain
         }
 
         private void HandleEndDrag(UIInventoryItem inventoryItemUI)
@@ -142,7 +134,6 @@ namespace Inventory.UI
             DeselectAllItem();
         }
 
-<<<<<<< HEAD
 
         public void AddAction(string actionName, Action performAction)
         { 
@@ -159,26 +150,18 @@ namespace Inventory.UI
         }
 
 
-=======
->>>>>>> testMain
         private void DeselectAllItem()
         {
             foreach (UIInventoryItem item in listOfUIItems)
             {
                 item.Deselect();
             }
-<<<<<<< HEAD
             actionPanel.Toggle(false);
-=======
->>>>>>> testMain
         }
 
         public void Hide()
         {
-<<<<<<< HEAD
             actionPanel.Toggle(false);
-=======
->>>>>>> testMain
             gameObject.SetActive(false);
             ResetDraggedItem();
         }
