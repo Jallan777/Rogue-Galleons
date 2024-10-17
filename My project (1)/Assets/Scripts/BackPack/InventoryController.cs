@@ -3,7 +3,10 @@ using Inventory.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Text;
+=======
+>>>>>>> testMain
 using UnityEngine;
 
 namespace Inventory
@@ -11,6 +14,7 @@ namespace Inventory
     public class InventoryController : MonoBehaviour
     {
         [SerializeField]
+<<<<<<< HEAD
         private UIInventoryPage inventoryUI; // Reference to the UI that manages inventory display
 
         [SerializeField]
@@ -51,11 +55,46 @@ namespace Inventory
         {
             inventoryUI.ResetAllItems(); // Clear the current UI items
             foreach (var item in inventoryState) // Update the UI with new inventory data
+=======
+        private UIInventoryPage inventoryUI;
+
+        [SerializeField]
+        private InventorySO inventoryData;
+
+        //public int inventorySize = 10;
+
+        public List<InventoryItem > InitialItems = new List<InventoryItem>();
+
+        private void Start()
+        {
+            PrepareUI();
+            PrepareInventoryData();
+        }
+
+        private void PrepareInventoryData()
+        {
+            inventoryData.Initialize();
+            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            foreach (InventoryItem item in InitialItems)
+            {
+                if (item.IsEmpty)
+                    continue;
+                inventoryData.AddItem(item);
+
+            }
+        }
+
+        private void UpdateInventoryUI(Dictionary<int, InventoryItem> inventoryState)
+        {
+            inventoryUI.ResetAllItems();
+            foreach (var item in inventoryState)
+>>>>>>> testMain
             {
                 inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, item.Value.quantity);
             }
         }
 
+<<<<<<< HEAD
         // Prepares the UI, setting up event handlers for user interactions
         private void PrepareUI()
         {
@@ -173,12 +212,75 @@ namespace Inventory
         public void Update()
         {
             // Check if the "I" key is pressed to toggle inventory visibility
+=======
+        private void PrepareUI()
+        {
+            inventoryUI.InitializeInventoryUI(inventoryData.Size);
+            inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+            inventoryUI.OnSwapItems += HandleSwapItems;
+            inventoryUI.OnStartDragging += HandleDragging;
+            inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+        }
+
+
+        private void HandleItemActionRequest(int itemIndex)
+        {
+
+        }
+
+
+
+        private void HandleDragging(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+            inventoryUI.CreateDraggedItem(inventoryItem.item.ItemImage, inventoryItem.quantity);
+        }
+
+
+
+        private void HandleSwapItems(int itemIndex_1, int itemIndex_2)
+        {
+            inventoryData.SwapItem(itemIndex_1, itemIndex_2);
+        }
+
+
+
+
+
+        private void HandleDescriptionRequest(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryUI.ResetSelection();
+                return;
+            }
+
+            ItemSO item = inventoryItem.item;
+            inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.name, item.Description);
+
+        }
+
+
+
+
+
+        public void Update()
+        {
+>>>>>>> testMain
             if (Input.GetKeyDown(KeyCode.I))
             {
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
+<<<<<<< HEAD
                     inventoryUI.Show(); // Show the inventory UI if it is currently hidden
                     foreach (var item in inventoryData.GetCurrentInventoryState()) // Update the UI with the current inventory state
+=======
+                    inventoryUI.Show();
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
+>>>>>>> testMain
                     {
                         inventoryUI.UpdateData(item.Key,
                             item.Value.item.ItemImage,
@@ -187,9 +289,19 @@ namespace Inventory
                 }
                 else
                 {
+<<<<<<< HEAD
                     inventoryUI.Hide(); // Hide the inventory UI if it is currently visible
                 }
             }
         }
     }
 }
+=======
+                    inventoryUI.Hide();
+                }
+
+            }
+        }
+    }
+}
+>>>>>>> testMain

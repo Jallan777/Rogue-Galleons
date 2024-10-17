@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 using System;
+=======
+>>>>>>> testMain
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace Inventory.Model
 {
+<<<<<<< HEAD
 
 
     public abstract class ItemSO : ScriptableObject
+=======
+    [CreateAssetMenu]
+
+    public class ItemSO : ScriptableObject
+>>>>>>> testMain
     {
         [field: SerializeField]
         public bool IsStackable { get; set; }
@@ -28,6 +37,7 @@ namespace Inventory.Model
         public Sprite ItemImage { get; set; }
 
 
+<<<<<<< HEAD
         [field: SerializeField]
         public  List<ItemParameter> DefaultParametersList { get; set; }
     }
@@ -41,6 +51,9 @@ namespace Inventory.Model
         {
             return other.itemParameter == itemParameter;
         }
+=======
+
+>>>>>>> testMain
     }
 
 }
