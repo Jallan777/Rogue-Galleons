@@ -39,7 +39,7 @@ public class VolumeControl : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Find the active Canvas first
+        // Find active Canvas first
         GameObject newMusicObject = GameObject.Find("BG_Music");
 
         if (newMusicObject != null)
@@ -58,7 +58,7 @@ public class VolumeControl : MonoBehaviour
         {
             Debug.LogError("BG_Music not found in the scene.");
         }
-
+        // Changes based on if it is Combat Scene or not
         GameObject canvasOrUI = null;
         if(scene.name == "Combat")
         {
@@ -71,25 +71,25 @@ public class VolumeControl : MonoBehaviour
 
         if (canvasOrUI != null)
         {
-            // Find the Settings Panel (inactive) inside the Canvas
+            // Find  Settings Panel inside  Canvas
             Transform settingsPanel = canvasOrUI.transform.Find("Setting Panel");
 
             if (settingsPanel != null)
             {
-                // Now search for the MusicSlider specifically within the Settings Panel
+                // Find MusicSlider within Settings Panel
                 volumeSlider = settingsPanel.Find("MusicSlider")?.GetComponent<Slider>();
 
                 if (volumeSlider != null)
                 {
                     Debug.Log("MusicSlider found: " + volumeSlider.name);
 
-                    // Remove previous listeners to avoid duplication
+                    // Remove listeners to avoid duplication
                     volumeSlider.onValueChanged.RemoveAllListeners();
 
-                    // Set the music volume to the current slider value
+                    // Set music volume to current slider value
                     musicSource.volume = volumeSlider.value;
 
-                    // Add the new listener for volume changes
+                    // Add new listener for volume changes
                     volumeSlider.onValueChanged.AddListener(SetVolume);
                 }
                 else
