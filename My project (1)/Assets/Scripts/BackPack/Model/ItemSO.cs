@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace Inventory.Model
 {
+    [CreateAssetMenu]
 
-
-    public abstract class ItemSO : ScriptableObject
+    public class ItemSO : ScriptableObject
     {
         [field: SerializeField]
         public bool IsStackable { get; set; }
@@ -28,19 +27,7 @@ namespace Inventory.Model
         public Sprite ItemImage { get; set; }
 
 
-        [field: SerializeField]
-        public  List<ItemParameter> DefaultParametersList { get; set; }
-    }
-    [Serializable]
-    public struct ItemParameter : IEquatable<ItemParameter>
-    {
-        public ItemParameterSO itemParameter;
-        public float value;
 
-        public bool Equals(ItemParameter other)
-        {
-            return other.itemParameter == itemParameter;
-        }
     }
 
 }
