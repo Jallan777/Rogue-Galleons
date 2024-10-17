@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Ship : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Ship : MonoBehaviour
 
 
     public GameObject success;
+
+    public Text EnmHp;
     private void Awake() {
         this.currentHealth = this.maxHealth;
         this.launcher = this.GetComponentInChildren<CannonLauncher>();
@@ -27,7 +30,7 @@ public class Ship : MonoBehaviour
 
     public void takeDamage(Attack attack){
         this.currentHealth -= attack.attackDamage;
-
+        EnmHp.text = this.currentHealth.ToString();
         print(currentHealth);
         if (currentHealth<=0) { success.SetActive(true); }
         OnTakingDamage.Invoke(this);
