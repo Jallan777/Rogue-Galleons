@@ -8,6 +8,10 @@ public class StatusBar : MonoBehaviour
     public Image healthFill;
     public Image healthDelay;
 
+    // private void Awake() {
+    //     this.healthDelay = this.GetComponentsInChildren<Image>()[0];
+    //     this.healthFill = this.GetComponentsInChildren<Image>()[1];
+    // }
 
     public void onHealthChange(float percentage){
 
