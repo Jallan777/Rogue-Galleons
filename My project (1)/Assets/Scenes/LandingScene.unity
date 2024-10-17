@@ -228,11 +228,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.5029, y: 192.5104}
+  m_AnchoredPosition: {x: -1328, y: 86}
   m_SizeDelta: {x: 111.0384, y: 100.2054}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35612337
@@ -302,7 +302,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -743,11 +743,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555.1053, y: 160.01134}
+  m_AnchoredPosition: {x: -1167.4185, y: 85.76136}
   m_SizeDelta: {x: 142.6346, y: 111.0384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111744767
@@ -817,7 +817,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -877,11 +877,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.41262, y: -188.45052}
+  m_AnchoredPosition: {x: -1339, y: 190}
   m_SizeDelta: {x: 37.9155, y: 45.1375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113877045
@@ -951,7 +951,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2943,49 +2943,6 @@ RectTransform:
   m_AnchoredPosition: {x: -253.3, y: -11}
   m_SizeDelta: {x: 105.6732, y: 85.4014}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &434049844
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 434049845}
-  m_Layer: 5
-  m_Name: CenterIslands
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &434049845
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434049844}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1611410309}
-  - {fileID: 1351233688}
-  - {fileID: 1226610408}
-  - {fileID: 35612336}
-  - {fileID: 1288675126}
-  - {fileID: 2026645604}
-  - {fileID: 113877044}
-  - {fileID: 111744766}
-  m_Father: {fileID: 1126819830}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103, y: -74.25}
-  m_SizeDelta: {x: 1410, y: 763.5}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &470973830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4406,46 +4363,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &676728789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 676728790}
-  m_Layer: 5
-  m_Name: EdgeIslands
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &676728790
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676728789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 699365176}
-  - {fileID: 1436564465}
-  - {fileID: 881314024}
-  - {fileID: 903255507}
-  - {fileID: 878249287}
-  m_Father: {fileID: 1126819830}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130.5, y: -4.449997}
-  m_SizeDelta: {x: 1564, y: 998.9}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &686870082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,11 +4544,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676728790}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -206.5412, y: -394.927}
+  m_AnchoredPosition: {x: -337.0412, y: -399.377}
   m_SizeDelta: {x: 384.4799, y: 111.0384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699365177
@@ -4701,7 +4618,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5853,11 +5770,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676728790}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 568.7856, y: 414.56973}
+  m_AnchoredPosition: {x: -1186, y: 410.11972}
   m_SizeDelta: {x: 299.7133, y: 73.1228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878249288
@@ -5927,7 +5844,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5997,11 +5914,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676728790}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -273.12, y: 418.36133}
+  m_AnchoredPosition: {x: -403.62, y: 413.91132}
   m_SizeDelta: {x: 139.0236, y: 65.9008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881314025
@@ -6071,7 +5988,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6131,11 +6048,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676728790}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 263.02386, y: 435.2427}
+  m_AnchoredPosition: {x: -1231, y: 430.7927}
   m_SizeDelta: {x: 250.062, y: 31.5963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903255508
@@ -6205,7 +6122,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7055,8 +6972,19 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 580659913}
-  - {fileID: 676728790}
-  - {fileID: 434049845}
+  - {fileID: 699365176}
+  - {fileID: 1436564465}
+  - {fileID: 881314024}
+  - {fileID: 903255507}
+  - {fileID: 878249287}
+  - {fileID: 1611410309}
+  - {fileID: 1351233688}
+  - {fileID: 1226610408}
+  - {fileID: 35612336}
+  - {fileID: 1288675126}
+  - {fileID: 2026645604}
+  - {fileID: 113877044}
+  - {fileID: 111744766}
   - {fileID: 1556942657}
   - {fileID: 1600402411}
   - {fileID: 823537374}
@@ -7096,7 +7024,11 @@ MonoBehaviour:
   edgeIslands:
   - {fileID: 903255506}
   - {fileID: 878249286}
-  boundingAreaSize: {x: 1400, y: 800}
+  otherIslands:
+  - {fileID: 699365175}
+  - {fileID: 1436564464}
+  - {fileID: 881314023}
+  boundingAreaSize: {x: 1550, y: 750}
   boundingAreaCenter: {x: 0, y: 0}
   treasureIslandImage: {fileID: 1556942658}
   tiImages:
@@ -7104,6 +7036,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 881303cefa91a1545b01ec88d08c7b64, type: 3}
   - {fileID: 21300000, guid: f21cd43b17865f44e9e14a69c186d0d8, type: 3}
   boxColour: {r: 0, g: 1, b: 0.8139732, a: 1}
+  image1: {fileID: 1611410309}
+  image2: {fileID: 1351233688}
 --- !u!1 &1132491502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7474,11 +7408,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -369.31146, y: 254.80017}
+  m_AnchoredPosition: {x: -1405, y: -197}
   m_SizeDelta: {x: 115.5521, y: 111.0384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226610409
@@ -7548,7 +7482,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7693,11 +7627,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -220.35762, y: 327.92297}
+  m_AnchoredPosition: {x: -1376, y: -80}
   m_SizeDelta: {x: 78.5393, y: 47.8458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288675127
@@ -7767,7 +7701,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7973,11 +7907,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -588.6801, y: -41.3021}
+  m_AnchoredPosition: {x: -1376, y: -384}
   m_SizeDelta: {x: 115.5521, y: 197.7025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351233689
@@ -8047,7 +7981,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9137,11 +9071,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676728790}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -540.721, y: 358.52206}
+  m_AnchoredPosition: {x: -671.221, y: 354.0721}
   m_SizeDelta: {x: 305.0785, y: 185.5791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436564466
@@ -9211,7 +9145,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10205,7 +10139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.64936, y: -192.28592}
+  m_AnchoredPosition: {x: 517, y: -248}
   m_SizeDelta: {x: 276.2418, y: 186.8694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556942658
@@ -10275,7 +10209,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10591,7 +10525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 281.65836, y: 73.12282}
+  m_AnchoredPosition: {x: -1170, y: 269}
   m_SizeDelta: {x: 193.1887, y: 152.5649}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600402412
@@ -10661,7 +10595,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10968,11 +10902,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.07484, y: -224.56055}
+  m_AnchoredPosition: {x: -1153, y: -159}
   m_SizeDelta: {x: 332.2123, y: 225.6877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611410310
@@ -11042,7 +10976,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11552,6 +11486,7 @@ GameObject:
   - component: {fileID: 1712772833}
   - component: {fileID: 1712772832}
   - component: {fileID: 1712772830}
+  - component: {fileID: 1712772831}
   m_Layer: 5
   m_Name: LandingPopup
   m_TagString: Untagged
@@ -11593,7 +11528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
-<<<<<<< Updated upstream
 --- !u!114 &1712772831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11662,8 +11596,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-=======
->>>>>>> Stashed changes
 --- !u!114 &1712772832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13266,11 +13198,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434049845}
+  m_Father: {fileID: 1126819830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 537.0504, y: -191.15877}
+  m_AnchoredPosition: {x: -1033, y: 74}
   m_SizeDelta: {x: 85.7613, y: 93.8861}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2026645605
@@ -13340,7 +13272,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
