@@ -17,6 +17,7 @@ public class AttackButton : MonoBehaviour
     public int currentLabour;
     public UnityEvent<int> onRequestLabour;
     public UnityEvent onAcceptance;
+    public UnityEvent<int> onReleaseLabour;
 
 
     private void Awake() {
@@ -53,10 +54,15 @@ public class AttackButton : MonoBehaviour
         if(this.currentLabour<maxLabourNeeded){
             onRequestLabour.Invoke(maxLabourNeeded);
             // Debug.Log("onRequestLabour Invoked at " + maxLabourNeeded);
+        }else{
+            onReleaseLabour.Invoke(maxLabourNeeded);
+            this.disableLabBars();
+            currentLabour = 0;
         }
     }
 
     public void onAcceptanceBehaviour(){
+        currentLabour = maxLabourNeeded;
         onAcceptance.Invoke();
         this.enableLabBars();
     }

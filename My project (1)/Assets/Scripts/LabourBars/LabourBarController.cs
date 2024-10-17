@@ -20,19 +20,40 @@ public class LabourBarController : MonoBehaviour
         this.currentLabour = totalLabour; //max on scene starts
     }
 
-    private void onLabourChange(int current,int need){
-        int adjustment = current -  (current - need);
+    public void onReceivingLabour(int amount){
+        onLabourChange(currentLabour,amount,true);
+        this.currentLabour += amount;
+    }
+    
+    /// <summary>
+    /// Change the labour displaying in the total labour bar
+    /// </summary>
+    /// <param name="current">current labour BEFORE adjustment</param>
+    /// <param name="need">amount of adjustment</param>
+    /// <param name="behaviour">true for add, false for substract.</param>
+    private void onLabourChange(int current,int need, bool behaviour){
         // Debug.Log("adj: "+ adjustment);
         int done = 0;
-        for(int i = 0; i < labBars.Length; i++){
-            if(labBars[i].GetComponentsInChildren<Image>()[0].fillAmount==1){
-                Debug.Log(labBars[i].GetComponentsInChildren<Image>()[0].gameObject.name);
-                labBars[i].GetComponentsInChildren<Image>()[0].fillAmount = 0;
-                done ++;
-                // Debug.Log("Done: "+ done);
+        if(!behaviour){
+            int adjustment = current -  (current - need);        
+            for(int i = 0; i < labBars.Length; i++){
+                if(labBars[i].GetComponentsInChildren<Image>()[0].fillAmount==1){
+                    labBars[i].GetComponentsInChildren<Image>()[0].fillAmount = 0;
+                    done ++;
+                }
+                if(done == adjustment){
+                    break;
+                }
             }
-            if(done == adjustment){
-                break;
+        }else{
+            for(int i = 0; i < labBars.Length; i++){
+                if(labBars[i].GetComponentsInChildren<Image>()[0].fillAmount==0){
+                    labBars[i].GetComponentsInChildren<Image>()[0].fillAmount = 1;
+                    done ++;
+                }
+                if(done == need){
+                    break;
+                }
             }
         }
     }
@@ -40,7 +61,7 @@ public class LabourBarController : MonoBehaviour
     public void onGettingRequest(int need){
         if(need <= currentLabour){
             // Debug.Log("compare passed");
-            onLabourChange(currentLabour,need);
+            onLabourChange(currentLabour,need,false);
             currentLabour -= need; 
             onReturningCannonResult.Invoke(); // activate Cannon
         }else{
