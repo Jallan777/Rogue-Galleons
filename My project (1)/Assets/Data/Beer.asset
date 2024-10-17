@@ -9,13 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6ba2823205f14a4cadac3a46363ca51, type: 3}
+  m_Script: {fileID: 11500000, guid: c80751f4bfaaa324b864cd75114dc349, type: 3}
   m_Name: Beer
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
-  <MaxStackSize>k__BackingField: 20
-  <Name>k__BackingField: Beer
-  <Description>k__BackingField: 'Restores health
-
-'
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 99
+  <Name>k__BackingField: Apple
+  <Description>k__BackingField: Restore Health
   <ItemImage>k__BackingField: {fileID: -220869960, guid: 372921d292a8b274392390e7ed2449df, type: 3}
+  <DefaultParametersList>k__BackingField: []
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 1d1b9cba50e73054bbae283a2ad5254f, type: 2}
+    value: 10
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 8e1b3fb49c5931e44ad94973a9e9f584, type: 3}
