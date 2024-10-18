@@ -25,21 +25,19 @@ namespace Inventory.Model
                 inventoryItems.Add(InventoryItem.GetEmptyItem());
             }
         }
-        public int AddItem(ItemSO item, int quantity)
+        public int AddItem(ItemSO item, int quantity, List<ItemParameter> itemState = null )
         {
             if (item.IsStackable == false)
             {
                 for (int i = 0; i < inventoryItems.Count; i++)
                 {
-                   
-
-                    while (quantity > 0 && IsInventoryFull() == false) 
+                    while (quantity > 0 && IsInventoryFull() == false)
                     {
-                       quantity -=  AddItemToFirstFreeSlot(item, 1);
-                      
+                        quantity -= AddItemToFirstFreeSlot(item, 1, itemState);
+
 
                     }
-                    InformAboutChange();    
+                    InformAboutChange();
                     return quantity;
                 }
             }
@@ -47,25 +45,26 @@ namespace Inventory.Model
             InformAboutChange();
             return quantity;
 
-    }
+        }
 
-        private int AddItemToFirstFreeSlot(ItemSO item, int quantity)
+        private int AddItemToFirstFreeSlot(ItemSO item, int quantity
+            , List<ItemParameter> itemState = null)
         {
             InventoryItem newItem = new InventoryItem
             {
                 item = item,
-                quantity = quantity
+                quantity = quantity,
+                itemState =
+                new List<ItemParameter>(itemState == null ? item.DefaultParametersList : itemState)
             };
 
             for (int i = 0; i < inventoryItems.Count; i++)
             {
-                if (inventoryItems[i].IsEmpty) 
-                { 
-                inventoryItems[i] = newItem;
+                if (inventoryItems[i].IsEmpty)
+                {
+                    inventoryItems[i] = newItem;
                     return quantity;
-                
                 }
-            
             }
             return 0;
         }
@@ -111,7 +110,7 @@ namespace Inventory.Model
         }
 
 
-            public Dictionary<int, InventoryItem> GetCurrentInventoryState()
+        public Dictionary<int, InventoryItem> GetCurrentInventoryState()
         {
             Dictionary<int, InventoryItem> returnValue =
                 new Dictionary<int, InventoryItem>();
@@ -150,18 +149,34 @@ namespace Inventory.Model
         {
             OnInventoryUpdated?.Invoke(GetCurrentInventoryState());
         }
+
+        public void RemoveItem(int itemIndex, int amount)
+        {
+            if (inventoryItems.Count > itemIndex)
+            {
+                if (inventoryItems[itemIndex].IsEmpty)
+                    return;
+                int reminder = inventoryItems[itemIndex].quantity - amount;
+                if (reminder <= 0)
+                    inventoryItems[itemIndex] = InventoryItem.GetEmptyItem();
+                else
+                    inventoryItems[itemIndex] = inventoryItems[itemIndex]
+                        .ChangeQuantity(reminder);
+
+                InformAboutChange();
+            }
+        }
     }
 
 
 
 
-
-    [Serializable]
+        [Serializable]
     public struct InventoryItem
     {
         public int quantity;
         public ItemSO item;
-        // public List<ItemParameter> itemState;
+         public List<ItemParameter> itemState;
         public bool IsEmpty => item == null;
 
         public InventoryItem ChangeQuantity(int newQuantity)
@@ -170,7 +185,7 @@ namespace Inventory.Model
             {
                 item = this.item,
                 quantity = newQuantity,
-                //  itemState = new List<ItemParameter>(this.itemState)
+                 itemState = new List<ItemParameter>(this.itemState)
             };
         }
 
@@ -179,7 +194,7 @@ namespace Inventory.Model
             {
                 item = null,
                 quantity = 0,
-                // itemState = new List<ItemParameter>()
+                  itemState = new List<ItemParameter>()
             };
     }
 
