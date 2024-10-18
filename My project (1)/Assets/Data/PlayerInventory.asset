@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   inventoryItems:
+  - quantity: 1
+    item: {fileID: 11400000, guid: 1c460f13abf81284ab59a59160586e2b, type: 2}
+    itemState:
+    - itemParameter: {fileID: 11400000, guid: 6ad3b3c8a133bb4449a5a2d09c267367, type: 2}
+      value: 100
   - quantity: 0
     item: {fileID: 0}
-    itemState: []
-  - quantity: 1
-    item: {fileID: 11400000, guid: 0ebba44f6ec2d2f41a17527d1651a6c7, type: 2}
     itemState: []
   - quantity: 0
     item: {fileID: 0}

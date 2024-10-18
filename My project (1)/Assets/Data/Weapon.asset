@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Cannon
-  <Description>k__BackingField: shooting
+  <Name>k__BackingField: weapon
+  <Description>k__BackingField: 'shooting
+
+'
   <ItemImage>k__BackingField: {fileID: 1655632118, guid: 372921d292a8b274392390e7ed2449df, type: 3}
   <DefaultParametersList>k__BackingField:
   - itemParameter: {fileID: 11400000, guid: 6ad3b3c8a133bb4449a5a2d09c267367, type: 2}

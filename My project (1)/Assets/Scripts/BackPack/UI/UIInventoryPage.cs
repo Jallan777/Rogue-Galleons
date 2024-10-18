@@ -156,7 +156,7 @@ namespace Inventory.UI
             {
                 item.Deselect();
             }
-            actionPanel.Toggle(false);
+            actionPanel.Toggle(false); 
         }
 
         public void Hide()
