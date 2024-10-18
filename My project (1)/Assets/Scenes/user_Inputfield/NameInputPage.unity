@@ -3195,6 +3195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+  settingPanel: {fileID: 0}
+  achPanel: {fileID: 0}
+  tutorialPanel: {fileID: 0}
   pauseMenu: {fileID: 770544541}
 --- !u!1 &775960049
 GameObject:
@@ -4868,7 +4871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013441554, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16.000061, y: 0.000061035156}
+  m_AnchoredPosition: {x: 148, y: 0.000061035156}
   m_SizeDelta: {x: -1736, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1374233802
@@ -6623,6 +6626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 2026488181}
   resultText: {fileID: 1898097080}
+  isNamed: 0
 --- !u!1 &1763683726
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,6 +7148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+  settingPanel: {fileID: 0}
+  achPanel: {fileID: 0}
+  tutorialPanel: {fileID: 0}
   pauseMenu: {fileID: 770544541}
 --- !u!1 &1866260561
 GameObject:
@@ -8195,7 +8202,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 770544546}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Resume
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8620,6 +8627,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+  settingPanel: {fileID: 0}
+  achPanel: {fileID: 0}
+  tutorialPanel: {fileID: 0}
   pauseMenu: {fileID: 770544541}
 --- !u!1 &2095885639
 GameObject:
