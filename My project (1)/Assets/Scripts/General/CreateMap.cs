@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class CreateMap : MonoBehaviour
 {
 
+    public Button mapButton;
+
     public GameObject[] centerIslands;
     public GameObject[] edgeIslands;
 
