@@ -5,8 +5,5 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-   public int maxLabourAvail;
-   public int currentLabourAvail;
-
-    
+   
 }

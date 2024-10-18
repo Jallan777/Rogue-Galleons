@@ -16,7 +16,6 @@ public class CannonLauncher : MonoBehaviour
     public float setCoolDownTime;
     public float currentCoolDownTime;
     public Attack attack;
-    private int countDownResetMarker;
 
 
     private void Awake() {
@@ -24,9 +23,7 @@ public class CannonLauncher : MonoBehaviour
         this.ball = this.GetComponentInChildren<CannonBall>();
         this.currentCoolDownTime = setCoolDownTime;
         this.isCoolingDown = true;
-        this.countDownResetMarker = 0;
         ball.BallReset();
-        
     }
 
     private void Update() {
@@ -37,8 +34,6 @@ public class CannonLauncher : MonoBehaviour
             }else{
                 CountDown();
             }
-        }else{
-            currentCoolDownTime = setCoolDownTime;
         }
     }
 
