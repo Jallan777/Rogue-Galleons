@@ -7144,6 +7144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8f941353b4f0a4f91cb17b89b7fa4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapButton: {fileID: 631380207}
   centerIslands:
   - {fileID: 1611410308}
   - {fileID: 1351233687}
