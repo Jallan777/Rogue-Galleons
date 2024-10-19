@@ -7776,6 +7776,9 @@ MonoBehaviour:
   - ingame 2
   - Nighttimesea
   - PeacefulSea
+  - Combat 1
+  - Combat 2
+  - Combat 3
 --- !u!1 &1078159719
 GameObject:
   m_ObjectHideFlags: 0

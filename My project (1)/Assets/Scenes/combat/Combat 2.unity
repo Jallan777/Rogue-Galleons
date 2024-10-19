@@ -11849,6 +11849,9 @@ MonoBehaviour:
   - ingame 1
   - ingame 2
   - Combat
+  - Combat 1
+  - Combat 2
+  - Combat 3
 --- !u!1 &1917129540
 GameObject:
   m_ObjectHideFlags: 0
