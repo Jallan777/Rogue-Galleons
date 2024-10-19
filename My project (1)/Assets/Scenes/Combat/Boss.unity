@@ -4234,7 +4234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 225}
+  m_AnchoredPosition: {x: 51, y: 227.41}
   m_SizeDelta: {x: 200.53, y: 67.0007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584110323
@@ -4270,7 +4270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: KRAKEN
 --- !u!222 &584110324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7521,12 +7521,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1316959648, guid: d6406aeb1f49345e2b607b510c4fc94d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f317152ea7ea6d243b46d45f7520daef, type: 3}
+  m_Color: {r: 0, g: 1, b: 0.9067538, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.3125, y: 0.21875}
+  m_Size: {x: 0.64, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
