@@ -16,7 +16,7 @@ public class DisplayPlayerHealth : MonoBehaviour
 
     public void Start()
     {
-        playerHealth = PlayerPrefs.GetFloat("PlayerHealth");
+        playerHealth = PlayerPrefs.HasKey("PlayerHealth") ? PlayerPrefs.GetFloat("PlayerHealth") : 500;
 
         healthBarFill.fillAmount = playerHealth / 500;
         healthBarRedFill.fillAmount = playerHealth / 500;

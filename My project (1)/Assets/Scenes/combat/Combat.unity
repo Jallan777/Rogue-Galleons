@@ -12532,6 +12532,7 @@ GameObject:
   - component: {fileID: 1674656284}
   - component: {fileID: 1674656285}
   - component: {fileID: 1674656286}
+  - component: {fileID: 1674656287}
   m_Layer: 5
   m_Name: ///Player UI
   m_TagString: Untagged
@@ -12588,7 +12589,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 1711967603}
   healthBarRedFill: {fileID: 798213394}
+  maxHealth: 500
   resultText: {fileID: 13227272}
+--- !u!114 &1674656287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674656283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f248a0b9f640834dbd5a55708a488cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 743240574}
+  inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
+  InitialItems:
+  - quantity: 2
+    item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
+    itemState: []
+  dropClip: {fileID: 0}
+  audioSource: {fileID: 2016231471}
 --- !u!1 &1683320832
 GameObject:
   m_ObjectHideFlags: 0
@@ -14769,7 +14791,6 @@ GameObject:
   - component: {fileID: 2016231467}
   - component: {fileID: 2016231466}
   - component: {fileID: 2016231465}
-  - component: {fileID: 2016231468}
   - component: {fileID: 2016231469}
   - component: {fileID: 2016231470}
   - component: {fileID: 2016231471}
@@ -14937,26 +14958,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &2016231468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016231462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f248a0b9f640834dbd5a55708a488cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 743240574}
-  inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
-  InitialItems:
-  - quantity: 2
-    item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
-    itemState: []
-  dropClip: {fileID: 0}
-  audioSource: {fileID: 2016231471}
 --- !u!114 &2016231469
 MonoBehaviour:
   m_ObjectHideFlags: 0

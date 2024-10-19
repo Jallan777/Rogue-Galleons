@@ -16,7 +16,7 @@ public class ShipStatHealthModifierSO : CharacterStatModifierSO
             float newHealth = playerHealth.CurrentHealth + healAmount;
 
             // Clamp health to not exceed the maximum (assuming 500 is max health)
-            playerHealth.CurrentHealth = Mathf.Clamp(newHealth, 0, playerHealth.maxHealth);
+            playerHealth.CurrentHealth = Mathf.Clamp(newHealth, 100 , playerHealth.maxHealth);
 
             // Update the health bar display
             playerHealth.UpdateHealthBar();

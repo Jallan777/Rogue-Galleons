@@ -20,5 +20,5 @@ MonoBehaviour:
   <DefaultParametersList>k__BackingField: []
   modifiersData:
   - statModifier: {fileID: 11400000, guid: bafe10aa62c94e54891dc4bb8d4ef633, type: 2}
-    value: 10
+    value: 50
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 8e1b3fb49c5931e44ad94973a9e9f584, type: 3}
