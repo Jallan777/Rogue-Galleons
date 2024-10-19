@@ -4499,6 +4499,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8ea0c33a070486e90bd3ff24f0e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLabourNeeded: 0
+  currentLabour: 0
+  onRequestLabour:
+    m_PersistentCalls:
+      m_Calls: []
+  onAcceptance:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleaseLabour:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &737839415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11662,7 +11673,7 @@ MonoBehaviour:
   - NighttimeSea
   - ingame 1
   - ingame 2
-  - Combat
+  - Boss
 --- !u!1 &1917129540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12421,12 +12432,18 @@ MonoBehaviour:
   InitialItems:
   - quantity: 1
     item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
+    itemState: []
   - quantity: 0
     item: {fileID: 0}
+    itemState: []
   - quantity: 1
     item: {fileID: 11400000, guid: 4213170cfaccdca418130e33d78b7bf0, type: 2}
+    itemState: []
   - quantity: 0
     item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
+    itemState: []
+  dropClip: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &2016231469
 MonoBehaviour:
   m_ObjectHideFlags: 0

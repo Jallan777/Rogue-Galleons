@@ -13893,7 +13893,7 @@ MonoBehaviour:
   - NighttimeSea
   - ingame 1
   - ingame 2
-  - Combat
+  - Boss
 --- !u!1 &1900464927
 GameObject:
   m_ObjectHideFlags: 0

@@ -7554,9 +7554,11 @@ MonoBehaviour:
   sceneNames:
   - PeacefulSea
   - ingame 1
-  - ingame 2
   - NighttimeSea
   - Combat
+  - Combat 1
+  - Combat 2
+  - Combat 3
 --- !u!1 &1092502654
 GameObject:
   m_ObjectHideFlags: 0

@@ -8513,11 +8513,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contButton: {fileID: 1050062428}
   sceneNames:
-  - PeacefulSea
   - ingame 1
   - ingame 2
   - NighttimeSea
   - Combat
+  - Combat 1
+  - Combat 2
+  - Combat 3
 --- !u!1 &1371556554
 GameObject:
   m_ObjectHideFlags: 0
