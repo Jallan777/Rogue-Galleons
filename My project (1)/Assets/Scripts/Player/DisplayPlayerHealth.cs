@@ -17,6 +17,15 @@ public class DisplayPlayerHealth : MonoBehaviour
     {
         playerHealth = PlayerPrefs.GetFloat("PlayerHealth");
 
+        UpdateHealthUI();
+
+        EventPopup eventPopup = FindObjectOfType<EventPopup>();
+
+        if(eventPopup != null)
+        {
+            eventPopup.onEventTrigger.AddListener(ApplyDamage);
+        }
+
         healthBarFill.fillAmount = playerHealth / 500;
         healthBarRedFill.fillAmount = playerHealth / 500;
         resultText.text = playerHealth.ToString();
@@ -26,8 +35,43 @@ public class DisplayPlayerHealth : MonoBehaviour
 
     }
 
+    public void UpdateHealth(float newHealth)
+    {
+        playerHealth = Mathf.Clamp(newHealth, 0 , 500);
+        PlayerPrefs.SetFloat("PlayerHealth", playerHealth);
+        PlayerPrefs.Save();
+
+        UpdateHealthUI();
+    }
+
+    private void UpdateHealthUI()
+    {
+        healthBarFill.fillAmount = playerHealth / 500;
+        healthBarRedFill.fillAmount = playerHealth / 500;
+        
+        resultText.text = playerHealth.ToString();
+        resultText.color = Color.black;
+    }
+
+    public void ApplyDamage(string eventDesc)
+    {
+        if(eventDesc.Contains("rogue  wave"))
+        {
+            UpdateHealth(playerHealth - 100);
+        }
+
+        if(eventDesc.Contains("shallow  reef"))
+        {
+            UpdateHealth(playerHealth - 50);
+        }
+    }
+
     public void Update()
     {
+        
+        //healthBarFill.fillAmount = playerHealth / 500;
+        //healthBarRedFill.fillAmount = playerHealth / 500;
+
         playerHealth = healthBarFill.fillAmount * 500;
         PlayerPrefs.SetFloat("PlayerHealth", playerHealth);
         PlayerPrefs.Save();
