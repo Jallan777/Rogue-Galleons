@@ -11,13 +11,15 @@ public class EnemyHealth : MonoBehaviour
     public GameObject enemyShip;  // The GameObject to disable when the slider is zero
     private float enemyHealth;
     [SerializeField] Text healthText;
+    private int enteredHealth;
 
     void Start()
-    {
-        enemyHealth = enemyHealthBarFill.fillAmount * 100;
+    { 
+        enteredHealth = int.Parse(healthText.text);
+        enemyHealth = enteredHealth;
 
-        enemyHealthBarFill.fillAmount = enemyHealth / 100;
-        enemyHealthBarRedFill.fillAmount = enemyHealth / 100;
+        enemyHealthBarFill.fillAmount = enemyHealth / enteredHealth;
+        enemyHealthBarRedFill.fillAmount = enemyHealth / enteredHealth;
         healthText.text = enemyHealth.ToString();
         healthText.color = Color.black;
     }
@@ -38,7 +40,12 @@ public class EnemyHealth : MonoBehaviour
             }
         }
 
-        enemyHealth = enemyHealthBarFill.fillAmount * 100;
+
+        enemyHealth = enemyHealthBarFill.fillAmount * enteredHealth;
+        
+
+        //enemyHealthBarFill.fillAmount = enemyHealth / enteredHealth;
+        //enemyHealthBarRedFill.fillAmount = enemyHealth / enteredHealth;
         healthText.text = enemyHealth.ToString();
     }
 }

@@ -3103,8 +3103,8 @@ Transform:
   m_GameObject: {fileID: 513064898}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.15150599, w: -0.98845637}
-  m_LocalPosition: {x: -0.17148443, y: -0.9113282, z: -0.12796874}
-  m_LocalScale: {x: 0.38835937, y: 0.39289066, z: -3.7578125}
+  m_LocalPosition: {x: 0.08131314, y: -0.89040416, z: -0.16545454}
+  m_LocalScale: {x: 0.5021212, y: 0.5079798, z: -4.8585863}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1031718351}
@@ -3499,7 +3499,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 60
 --- !u!222 &584110324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5943,8 +5943,8 @@ Transform:
   m_GameObject: {fileID: 927309019}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.63, y: 1.58, z: 0}
-  m_LocalScale: {x: 2.56, y: 2.56, z: 2.56}
+  m_LocalPosition: {x: 3.92, y: 1.01, z: 0}
+  m_LocalScale: {x: 1.9799999, y: 1.9799999, z: 1.9799999}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 513064902}
@@ -5979,7 +5979,7 @@ MonoBehaviour:
         m_CallState: 2
   shieldIcon: {fileID: 0}
   shieldSound: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 60
   currentHealth: 0
   shipType: 1
   isAttacking: 0
