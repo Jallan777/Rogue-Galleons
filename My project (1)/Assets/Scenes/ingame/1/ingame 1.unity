@@ -625,7 +625,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: de8a729012d1efa469bff3103e0b78ae, type: 3}
   m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
   m_FlipX: 0
@@ -4525,8 +4525,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 40
   respawnDelay: 15
-  startPoint: {x: 0, y: 0, z: 0}
-  endPoint: {x: 0, y: 0, z: 0}
+  startPoint: {x: 1200, y: 500, z: -8}
+  endPoint: {x: -150, y: 200, z: -8}
 --- !u!4 &904276383
 Transform:
   m_ObjectHideFlags: 0
@@ -4536,7 +4536,7 @@ Transform:
   m_GameObject: {fileID: 904276381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -185, y: 466, z: -0.7505112}
+  m_LocalPosition: {x: 404, y: 342, z: -0.7505112}
   m_LocalScale: {x: -0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5625,7 +5625,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: de8a729012d1efa469bff3103e0b78ae, type: 3}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
@@ -7744,6 +7744,10 @@ MonoBehaviour:
   - ingame 2
   - NighttimeSea
   - Combat
+  - Combat 1
+  - Combat 2
+  - Combat 3
+  - SunsetSea
 --- !u!1 &1350214781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,7 +10666,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: de8a729012d1efa469bff3103e0b78ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
