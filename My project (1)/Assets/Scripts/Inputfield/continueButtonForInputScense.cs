@@ -18,7 +18,7 @@ public class continueButtonForInputScense : MonoBehaviour
    {
       if(playerName.Length > 0)
       {
-         ResetIslands();
+         ResetMap();
          
          SceneManager.LoadSceneAsync("LandingScene"); // load the game level
       }
@@ -30,11 +30,12 @@ public class continueButtonForInputScense : MonoBehaviour
       playerName = PlayerPrefs.GetString("PlayerName");
    }
 
-   void ResetIslands()
+   void ResetMap()
    {
-      int otherIslandsCount = 3;
+      //int otherIslandsCount = 3;
       int edgeIslandsCount = 2;
       int centerIslandsCount = 10;
+      int index = 0;
 
       for(int i = 0; i < edgeIslandsCount; i++)
       {
@@ -47,6 +48,15 @@ public class continueButtonForInputScense : MonoBehaviour
          PlayerPrefs.DeleteKey("CenterIslandX_" + i);
          PlayerPrefs.DeleteKey("CenterIslandY_" + i);
       }
+
+      while(PlayerPrefs.HasKey("NodeX_" + (index + 1)))
+      {
+         PlayerPrefs.DeleteKey("NodeX_" + index);
+         PlayerPrefs.DeleteKey("NodeY_" + index);
+         index++;
+      }
+
+
       PlayerPrefs.Save();
 
    }

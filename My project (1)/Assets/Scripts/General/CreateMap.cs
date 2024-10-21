@@ -36,6 +36,7 @@ public class CreateMap : MonoBehaviour
         }
         else
         {
+            Debug.LogWarning("No previous island positions found");
             Debug.Log("Generating Random Map...");
 
             if (tiImages.Length != 3)
@@ -109,7 +110,7 @@ public class CreateMap : MonoBehaviour
 
         Vector2 randPosition;
         int counter = 0;
-        int counterMax = 25;
+        int counterMax = 35;
 
         do
         {
@@ -238,6 +239,7 @@ public class CreateMap : MonoBehaviour
                 newIslandBounds.yMax + minDistance > placedIslandBounds.yMin &&
                 newIslandBounds.yMin - minDistance < placedIslandBounds.yMax)
             {
+                Debug.LogWarning("Island Overlap Detected!");
                 return true;
             }
         }
