@@ -22,42 +22,55 @@ public class CreateMap : MonoBehaviour
 
 
     public RectTransform image1;
-    public RectTransform image2; 
+    public RectTransform image2;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if (tiImages.Length != 3)
+        if (PlayerPrefs.HasKey("CenterIslandX_0"))
         {
-            Debug.LogError("Assign 3 images please!");
-            return;
+            Debug.Log("Loading saved island positions...");
+            LoadIslandPositions();
+        }
+        else
+        {
+            Debug.Log("Generating Random Map...");
+
+            if (tiImages.Length != 3)
+            {
+                Debug.LogError("Assign 3 images please!");
+                return;
+            }
+
+            AssignTIImg();
+
+            foreach (GameObject island in centerIslands)
+            {
+                PlaceRandomly(island);
+            }
+
+            foreach (GameObject island in edgeIslands)
+            {
+                PlaceRandomX(island);
+            }
+
+            AddIslandPositions();
+
+            SaveIslandPosistions();
         }
 
-        AssignTIImg();
-
-        foreach (GameObject island in centerIslands)
-        {
-            PlaceRandomly(island);
-        }
-
-        foreach (GameObject island in edgeIslands)
-        {
-            PlaceRandomX(island);
-        }
-
-        AddIslandPositions();
     }
 
     void AddIslandPositions()
     {
-        
-        
-        foreach(GameObject island in otherIslands)
+
+
+        foreach (GameObject island in otherIslands)
         {
             RectTransform rt = island.GetComponent<RectTransform>();
-            if(rt != null)
+            if (rt != null)
             {
                 placedPositions.Add(rt.anchoredPosition);
             }
@@ -211,30 +224,6 @@ public class CreateMap : MonoBehaviour
         return new Vector2(randX, randY);
     }
 
-    /*
-        bool IsOverlapping(Vector2 newPosition, Vector2 islandSize)
-        {
-            Rect newIslandRect = new Rect (
-                newPosition - islandSize / 2,
-                islandSize
-            );
-
-            foreach(Vector2 placedPosition in placedPositions)
-            {
-                Rect placedIslandRect = new Rect (
-                placedPosition - islandSize / 2,
-                islandSize
-                );
-
-                if(newIslandRect.Overlaps(placedIslandRect))
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-    */
 
     bool IsOverlapping(Vector2 newPosition, Vector2 islandSize, float minDistance)
     {
@@ -255,4 +244,62 @@ public class CreateMap : MonoBehaviour
         return false;
     }
 
+    void SaveIslandPosistions()
+    {
+        for (int i = 0; i < otherIslands.Length; i++)
+        {
+            Vector2 position = otherIslands[i].GetComponent<RectTransform>().anchoredPosition;
+            PlayerPrefs.SetFloat("OtherIslandX_" + i, position.x);
+            PlayerPrefs.SetFloat("OtherIslandY_" + i, position.y);
+        }
+
+        for (int i = 0; i < edgeIslands.Length; i++)
+        {
+            Vector2 position = edgeIslands[i].GetComponent<RectTransform>().anchoredPosition;
+            PlayerPrefs.SetFloat("EdgeIslandX_" + i, position.x);
+            PlayerPrefs.SetFloat("EdgeIslandY_" + i, position.y);
+        }
+
+        for (int i = 0; i < centerIslands.Length; i++)
+        {
+            Vector2 position = centerIslands[i].GetComponent<RectTransform>().anchoredPosition;
+            PlayerPrefs.SetFloat("CenterIslandX_" + i, position.x);
+            PlayerPrefs.SetFloat("CenterIslandY_" + i, position.y);
+        }
+
+        PlayerPrefs.Save();
+    }
+
+    void LoadIslandPositions()
+    {
+        for (int i = 0; i < otherIslands.Length; i++)
+        {
+            if (PlayerPrefs.HasKey("OtherIslandX_" + i) && PlayerPrefs.HasKey("OtherIslandY_" + i))
+            {
+                float x = PlayerPrefs.GetFloat("OtherIslandX_" + i);
+                float y = PlayerPrefs.GetFloat("OtherIslandY_" + i);
+                otherIslands[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
+            }
+        }
+
+        for (int i = 0; i < edgeIslands.Length; i++)
+        {
+            if (PlayerPrefs.HasKey("EdgeIslandX_" + i) && PlayerPrefs.HasKey("EdgeIslandY_" + i))
+            {
+                float x = PlayerPrefs.GetFloat("EdgeIslandX_" + i);
+                float y = PlayerPrefs.GetFloat("EdgeIslandY_" + i);
+                edgeIslands[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
+            }
+        }
+
+        for (int i = 0; i < centerIslands.Length; i++)
+        {
+            if (PlayerPrefs.HasKey("CenterIslandX_" + i) && PlayerPrefs.HasKey("CenterIslandY_" + i))
+            {
+                float x = PlayerPrefs.GetFloat("CenterIslandX_" + i);
+                float y = PlayerPrefs.GetFloat("CenterIslandY_" + i);
+                centerIslands[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
+            }
+        }
+    }
 }
