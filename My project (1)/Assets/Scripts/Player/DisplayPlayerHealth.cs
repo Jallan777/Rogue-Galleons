@@ -10,13 +10,12 @@ public class DisplayPlayerHealth : MonoBehaviour
     private float playerHealth;
     public Image healthBarFill;
     public Image healthBarRedFill;
-    public float CurrentHealth { get; set; }
-    public float maxHealth = 500;
+
     [SerializeField] Text resultText;
 
     public void Start()
     {
-        playerHealth = PlayerPrefs.HasKey("PlayerHealth") ? PlayerPrefs.GetFloat("PlayerHealth") : 500;
+        playerHealth = PlayerPrefs.GetFloat("PlayerHealth");
 
         healthBarFill.fillAmount = playerHealth / 500;
         healthBarRedFill.fillAmount = playerHealth / 500;
@@ -35,12 +34,4 @@ public class DisplayPlayerHealth : MonoBehaviour
         resultText.text = playerHealth.ToString();
 
     }
-
-    public void UpdateHealthBar()
-    {
-        healthBarFill.fillAmount = CurrentHealth / maxHealth;
-        healthBarRedFill.fillAmount = CurrentHealth / maxHealth;
-        resultText.text = CurrentHealth.ToString();
-    }
-
 }
