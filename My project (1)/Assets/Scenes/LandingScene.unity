@@ -7970,8 +7970,10 @@ MonoBehaviour:
   nodes: []
   canvas: {fileID: 1126819829}
   nodePrefab: {fileID: 541021092}
+  mapAreaMargin: 50
   numIslands: 10
   islandType: Center
+  mapObject: {fileID: 580659912}
 --- !u!1 &1132491502
 GameObject:
   m_ObjectHideFlags: 0
