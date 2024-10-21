@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80751f4bfaaa324b864cd75114dc349, type: 3}
+  m_Name: Beer
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 99
+  <Name>k__BackingField: Beer
+  <Description>k__BackingField: Restores Health
+  <ItemImage>k__BackingField: {fileID: -220869960, guid: 372921d292a8b274392390e7ed2449df, type: 3}
+  <DefaultParametersList>k__BackingField: []
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: bafe10aa62c94e54891dc4bb8d4ef633, type: 2}
+    value: 50
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 8e1b3fb49c5931e44ad94973a9e9f584, type: 3}

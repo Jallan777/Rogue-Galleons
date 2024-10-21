@@ -8,7 +8,16 @@ public class InputHandler : MonoBehaviour
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
 
+    public bool isNamed;
 
+    public void Start()
+    {
+
+        PlayerPrefs.SetString("PlayerName", null);
+        PlayerPrefs.Save();
+        isNamed = false;
+
+    }
     public void VaildateInput()
     {
         string input = inputField.text;
@@ -29,8 +38,16 @@ public class InputHandler : MonoBehaviour
             resultText.color = Color.blue;
 
             PlayerPrefs.SetString("PlayerName", input);
+            PlayerPrefs.SetFloat("PlayerHealth", 500);
             PlayerPrefs.Save();
+            isNamed = true;
         }
+
+
+    }
+
+    public void Update()
+    {
 
     }
 }
