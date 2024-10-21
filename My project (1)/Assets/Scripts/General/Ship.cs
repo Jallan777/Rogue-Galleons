@@ -30,6 +30,10 @@ public class Ship : MonoBehaviour
     public float RechargeTime = 10f;
     private bool isRecharging = false;
 
+
+    public GameObject success;
+
+    public GameObject failure;
     private void Awake()
     {
 
@@ -42,7 +46,8 @@ public class Ship : MonoBehaviour
         }
         else
         {
-            this.currentHealth = PlayerPrefs.GetFloat("PlayerHealth");
+          this.currentHealth = PlayerPrefs.GetFloat("PlayerHealth");
+            ///this.currentHealth = 10;
         this.currentShield = maxShield;
         }
 
@@ -79,6 +84,23 @@ public class Ship : MonoBehaviour
         {
             currentHealth -= damage;
             OnTakingDamage.Invoke(this);
+
+            if (currentHealth <= 0)
+            {if (shipType == ShipType.ENEMY)
+                {
+                    success.SetActive(true);
+                }
+                else if (shipType == ShipType.PLAYER)
+                {
+                    failure.SetActive(true);
+                }
+               
+
+            }
+        }
+        else
+        {
+            
         }
     }
 
