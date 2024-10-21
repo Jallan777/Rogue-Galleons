@@ -4487,6 +4487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495692024}
   - component: {fileID: 495692025}
+  - component: {fileID: 495692026}
   m_Layer: 5
   m_Name: MapPopup
   m_TagString: Untagged
@@ -4574,6 +4575,24 @@ MonoBehaviour:
   boxColour: {r: 0, g: 1, b: 0.8139732, a: 1}
   image1: {fileID: 347347009}
   image2: {fileID: 1160935302}
+--- !u!114 &495692026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495692023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fcfb379b1d0a95428ceea1875f633b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeSprite: {fileID: 21300000, guid: 050c8df0a920612439f0cd690e6e577c, type: 3}
+  nodes: []
+  canvas: {fileID: 495692023}
+  nodePrefab: {fileID: 1799911312}
+  numIslands: 12
+  islandType: Center
 --- !u!1 &496163452
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,7 +92,7 @@ public class CreateMap : MonoBehaviour
         float distance = Vector2.Distance(pos1, pos2);
 
         // Print distance to console
-        Debug.Log("Distance between images: " + distance);
+        //Debug.Log("Distance between images: " + distance);
     }
 
     void PlaceRandomly(GameObject island)
