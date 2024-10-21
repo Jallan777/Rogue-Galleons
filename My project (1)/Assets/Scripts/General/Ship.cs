@@ -35,6 +35,11 @@ public class Ship : MonoBehaviour
 
         audioSource = gameObject.AddComponent<AudioSource>();
 
+        if (OnTakingDamage == null)
+        {
+            OnTakingDamage = new UnityEvent<Ship>();
+        }
+
         if (shipType == ShipType.ENEMY)
         {
             isAttacking = true;
@@ -47,6 +52,7 @@ public class Ship : MonoBehaviour
         }
 
         this.launcher = this.GetComponentInChildren<CannonLauncher>();
+
     }
 
     public void takeDamage(Attack attack)
