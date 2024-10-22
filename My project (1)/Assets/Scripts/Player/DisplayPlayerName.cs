@@ -8,7 +8,7 @@ public class DisplayPlayerName : MonoBehaviour
 {
 
     private string playerName;
-    [SerializeField] Text resultText;
+        [SerializeField] Text resultText;
 
 
     public void Start()

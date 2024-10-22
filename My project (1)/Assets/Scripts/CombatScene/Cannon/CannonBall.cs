@@ -25,9 +25,8 @@ public class CannonBall : MonoBehaviour
     }
 
     public void BallReset(){
-        this.GetComponent<CircleCollider2D>().enabled = false;
         Awake();
-        // this.stat = CannonBallStat.SELF_SIDE;
+        this.stat = CannonBallStat.SELF_SIDE;
         this.rb.constraints = RigidbodyConstraints2D.FreezeAll;
         this.rb.velocity = new Vector2(0,0);
         this.sr.color = new Color(sr.color.r,sr.color.g,sr.color.b,0);
@@ -40,8 +39,6 @@ public class CannonBall : MonoBehaviour
             this.rb.rotation = - 13.5f;
             this.transform.localPosition = new Vector3(- 0.5f,0.1f,0);
         }
-        this.GetComponent<CircleCollider2D>().enabled = true;
-
     }
 
     public void Shoot(Attack attack){
@@ -57,16 +54,12 @@ public class CannonBall : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-
-        // if on opposite side, then result damage
         if(this.stat == CannonBallStat.OPPOSITE_SIDE){
             this.onHit.Invoke(this.attack);
             this.BallReset();
             return;
         }
         
-        //if not on opposite side (which means this contact is with the mid-collider for teleport)
-
         if(this.shipType == ShipType.PLAYER){
             this.transform.localPosition = new Vector3(7,2.5f,0);
             this.rb.velocity = new Vector2(1,- 2);

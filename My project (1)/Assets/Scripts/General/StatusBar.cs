@@ -8,10 +8,6 @@ public class StatusBar : MonoBehaviour
     public Image healthFill;
     public Image healthDelay;
 
-    // private void Awake() {
-    //     this.healthDelay = this.GetComponentsInChildren<Image>()[0];
-    //     this.healthFill = this.GetComponentsInChildren<Image>()[1];
-    // }
 
     public void onHealthChange(float percentage){
 
@@ -25,8 +21,5 @@ public class StatusBar : MonoBehaviour
         if(healthDelay.fillAmount != healthFill.fillAmount){
             healthDelay.fillAmount -= Time.deltaTime * 0.5f;
         }
-
-        //PlayerPrefs.SetFloat("PlayerHealth", (healthFill.fillAmount * 500));
-       //PlayerPrefs.Save();
     }
 }
