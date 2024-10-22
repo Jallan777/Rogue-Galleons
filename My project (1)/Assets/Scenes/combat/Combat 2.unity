@@ -11852,6 +11852,7 @@ MonoBehaviour:
   - Combat 1
   - SunsetSea
   - Combat 3
+  - Boss
 --- !u!1 &1917129540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12693,12 +12694,18 @@ MonoBehaviour:
   InitialItems:
   - quantity: 1
     item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
+    itemState: []
   - quantity: 0
     item: {fileID: 0}
+    itemState: []
   - quantity: 1
     item: {fileID: 11400000, guid: 4213170cfaccdca418130e33d78b7bf0, type: 2}
+    itemState: []
   - quantity: 0
     item: {fileID: 11400000, guid: b7b87985bb77d8e4e8d1128b4086bf50, type: 2}
+    itemState: []
+  dropClip: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &2016231469
 MonoBehaviour:
   m_ObjectHideFlags: 0

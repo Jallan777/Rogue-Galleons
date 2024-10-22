@@ -35,6 +35,11 @@ public class Ship : MonoBehaviour
 
         audioSource = gameObject.AddComponent<AudioSource>();
 
+        if (OnTakingDamage == null)
+        {
+            OnTakingDamage = new UnityEvent<Ship>();
+        }
+
         if (shipType == ShipType.ENEMY)
         {
             isAttacking = true;
@@ -47,34 +52,35 @@ public class Ship : MonoBehaviour
         }
 
         this.launcher = this.GetComponentInChildren<CannonLauncher>();
+
     }
 
     public void takeDamage(Attack attack)
     {
         float damage = attack.attackDamage;
 
-        // If there is shield available, absorb damage first
+      
         if (isRecharging == false)
         {
-            float shieldAbsorbed = Mathf.Min(currentShield, damage); // Absorb as much damage as the shield can
-            currentShield -= shieldAbsorbed; // Reduce the shield amount
-            damage -= shieldAbsorbed; // Subtract absorbed damage from the remaining damage
+            float shieldAbsorbed = Mathf.Min(currentShield, damage); 
+            currentShield -= shieldAbsorbed;
+            damage -= shieldAbsorbed; 
 
-            // Update shield icon fill amount
+      
             if (shieldIcon != null)
             {
                 shieldIcon.fillAmount = currentShield / maxShield;
 
-                // Hide the shield icon if the shield is completely depleted
+               
                 if (currentShield <= 0)
                 {
-                    shieldIcon.enabled = false;  // Hide the shield icon
-                    StartCoroutine(RechargeShield());  // Start the recharge process
+                    shieldIcon.enabled = false; 
+                    StartCoroutine(RechargeShield()); 
                 }
             }
         }
 
-        // Apply remaining damage to health if the shield is depleted
+
         if (damage > 0)
         {
             currentHealth -= damage;
@@ -109,38 +115,37 @@ public class Ship : MonoBehaviour
     {
         isRecharging = true;
 
-        // Make sure the shield icon is visible when the recharge starts
-        if (shieldIcon != null)
+        
         {
             shieldIcon.enabled = true;
         }
 
-        // Wait for the recharge time before starting to restore the shield
+
         yield return new WaitForSeconds(RechargeTime);
 
-        float rechargeRate = maxShield / RechargeTime;  // Amount of shield to restore per second
+        float rechargeRate = maxShield / RechargeTime;  
 
         while (currentShield < maxShield)
         {
             currentShield += rechargeRate * Time.deltaTime;
-            currentShield = Mathf.Min(currentShield, maxShield);  // Cap shield at its maximum value
+            currentShield = Mathf.Min(currentShield, maxShield);  
 
-            // Update shield icon fill amount based on current shield percentage
+            
             if (shieldIcon != null)
             {
-                shieldIcon.fillAmount = currentShield / maxShield;  // Set the fill amount to match shield percentage
+                shieldIcon.fillAmount = currentShield / maxShield;  
             }
 
-            yield return null;  // Wait for the next frame
+            yield return null; 
         }
 
-        // Play sound effect when shield is fully charged
+      
         if (audioSource != null && shieldSound != null)
         {
             audioSource.PlayOneShot(shieldSound);
         }
 
-        isRecharging = false;  // Recharge complete
+        isRecharging = false;  
     }
 
 }

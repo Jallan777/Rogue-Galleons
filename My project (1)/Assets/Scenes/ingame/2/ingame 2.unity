@@ -8553,7 +8553,6 @@ MonoBehaviour:
   sceneNames:
   - PeacefulSea
   - ingame 1
-  - ingame 2
   - NighttimeSea
   - Combat
   - Combat 1
@@ -8730,6 +8729,8 @@ Transform:
   - {fileID: 1685746952}
   m_Father: {fileID: 1720514415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.902}
+  - Combat 2
+  - Combat 3
 --- !u!1 &1092502654
 GameObject:
   m_ObjectHideFlags: 0

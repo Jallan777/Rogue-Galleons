@@ -7740,7 +7740,6 @@ MonoBehaviour:
   contButton: {fileID: 2081605180}
   sceneNames:
   - PeacefulSea
-  - ingame 1
   - ingame 2
   - NighttimeSea
   - Combat

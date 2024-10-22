@@ -47,4 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SunsetSea.unity
     guid: 1a9e50a7446347b448d62b23e4db445e
+    path: Assets/Scenes/Combat/Combat 1.unity
+    guid: 780b9ae4631f11145bbab7e61bf7e2bb
+  - enabled: 1
+    path: Assets/Scenes/Combat/Combat 2.unity
+    guid: a3adbd083280bfe4b88cff8ce7fa746b
+  - enabled: 1
+    path: Assets/Scenes/Combat/Combat 3.unity
+    guid: a9fe3c96abff43648905e9cf11f173f2
   m_configObjects: {}
