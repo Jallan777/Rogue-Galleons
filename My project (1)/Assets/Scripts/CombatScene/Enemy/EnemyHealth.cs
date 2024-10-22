@@ -79,7 +79,6 @@ public class EnemyHealth : MonoBehaviour
 
         float elapsedTime = 0f;
         float maxTilt = 25f;
-        float tiltSpeed = 50f;
 
         
 

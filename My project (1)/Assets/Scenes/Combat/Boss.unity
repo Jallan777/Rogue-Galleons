@@ -7051,6 +7051,9 @@ MonoBehaviour:
   maxShield: 50
   currentShield: 0
   RechargeTime: 20
+  isBoss: 1
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!68 &927309024
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -12892,6 +12895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 1711967603}
   healthBarRedFill: {fileID: 798213394}
+  maxHealth: 500
   resultText: {fileID: 13227272}
 --- !u!1 &1683320832
 GameObject:
@@ -16021,6 +16025,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!68 &2126651728
 EdgeCollider2D:
   m_ObjectHideFlags: 0
