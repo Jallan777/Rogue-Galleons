@@ -15,10 +15,10 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 99
   <Name>k__BackingField: Beer
-  <Description>k__BackingField: Restire Health
+  <Description>k__BackingField: Restores Health
   <ItemImage>k__BackingField: {fileID: -220869960, guid: 372921d292a8b274392390e7ed2449df, type: 3}
   <DefaultParametersList>k__BackingField: []
   modifiersData:
-  - statModifier: {fileID: 11400000, guid: eeb7039b843b56a438e0c7900e53fb0c, type: 2}
-    value: 10
+  - statModifier: {fileID: 11400000, guid: bafe10aa62c94e54891dc4bb8d4ef633, type: 2}
+    value: 50
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 8e1b3fb49c5931e44ad94973a9e9f584, type: 3}
