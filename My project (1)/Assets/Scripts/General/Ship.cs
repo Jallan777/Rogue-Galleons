@@ -53,12 +53,12 @@ public class Ship : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Is Boss: " + isBoss);
-        
+        //Debug.Log("Is Boss: " + isBoss);
+
         string playerName = PlayerPrefs.GetString("PlayerName");
 
         randDefeatDesc = defeatTexts[Random.Range(0, defeatTexts.Count)];
-        randDefeatDesc = "You Failed <b>Captain " + playerName.ToUpper() + "</b>\n\n" + randWinDesc + "\nReturn to Main Menu";
+        randDefeatDesc = "You Failed <b>Captain " + playerName.ToUpper() + "</b>\n\n" + randDefeatDesc + "\nReturn to Main Menu";
         
         randWinDesc = winTexts[Random.Range(0, winTexts.Count)];
         randWinDesc = "Well Done <b>Captain " + playerName.ToUpper() + "</b>!\n\n" + randWinDesc + "\nReturn to Main Menu";
@@ -209,7 +209,6 @@ public class Ship : MonoBehaviour
 
                 if (winDescText != null)
                 {
-                    //randDefeatDesc = defeatTexts[Random.Range(0, defeatTexts.Count)];
 
 
                     winDescText.text = randWinDesc;
