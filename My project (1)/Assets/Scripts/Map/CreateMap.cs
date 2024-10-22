@@ -96,7 +96,7 @@ public class CreateMap : MonoBehaviour
         //Debug.Log("Distance between images: " + distance);
     }
 
-    void PlaceRandomly(GameObject island)
+    public void PlaceRandomly(GameObject island)
     {
         RectTransform rectTransform = island.GetComponent<RectTransform>();
 
@@ -171,7 +171,7 @@ public class CreateMap : MonoBehaviour
 
     }
 
-    void AssignTIImg()
+    public void AssignTIImg()
     {
         int randIndex = Random.Range(0, tiImages.Length);
         treasureIslandImage.sprite = tiImages[randIndex];
@@ -246,7 +246,7 @@ public class CreateMap : MonoBehaviour
         return false;
     }
 
-    void SaveIslandPosistions()
+    public void SaveIslandPosistions()
     {
         for (int i = 0; i < otherIslands.Length; i++)
         {
