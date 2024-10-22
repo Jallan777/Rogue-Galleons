@@ -13126,6 +13126,8 @@ MonoBehaviour:
   enemyHealthBarFill: {fileID: 858190231}
   enemyHealthBarRedFill: {fileID: 95415736}
   enemyShip: {fileID: 927309019}
+  fallSpeed: 0.2
+  fallDistance: 10
   healthText: {fileID: 584110323}
 --- !u!1 &1745117739
 GameObject:
