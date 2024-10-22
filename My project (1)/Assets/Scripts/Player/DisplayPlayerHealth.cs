@@ -52,6 +52,11 @@ public class DisplayPlayerHealth : MonoBehaviour
         
         resultText.text = playerHealth.ToString();
         resultText.color = Color.black;
+
+        Debug.Log("UPDATE HEALTH UI run with health: " + playerHealth);
+
+        PlayerPrefs.SetFloat("PlayerHealth", playerHealth);
+        PlayerPrefs.Save();
     }
 
     public void ApplyDamage(string eventDesc)
@@ -67,6 +72,15 @@ public class DisplayPlayerHealth : MonoBehaviour
         }
     }
 
+    public void ApplyHeal(float healAmount)
+    {
+        Debug.Log("Heal Amount: " + healAmount);
+        UpdateHealth(playerHealth + healAmount);
+        Debug.Log("New Health: " + playerHealth);
+
+        
+    }
+
     public void Update()
     {
         
@@ -78,6 +92,11 @@ public class DisplayPlayerHealth : MonoBehaviour
         PlayerPrefs.Save();
         resultText.text = playerHealth.ToString();
 
+    }
+
+    public float GetHealth()
+    {
+        return playerHealth;
     }
 
     public void UpdateHealthBar()

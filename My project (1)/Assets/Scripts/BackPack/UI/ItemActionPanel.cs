@@ -10,6 +10,7 @@ namespace Inventory.UI
     {
         [SerializeField]
         private GameObject buttonPrefab;
+        public GameObject closeButton;
 
         public void AddButon(string name, Action onClickAction)
         {
@@ -23,6 +24,7 @@ namespace Inventory.UI
             if (val == true)
                 RemoveOldButtons();
             gameObject.SetActive(val);
+            //closeButton.SetActive(val);
         }
 
         public void RemoveOldButtons()
