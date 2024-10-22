@@ -8,20 +8,30 @@ public class PlaceTravelNodes : MonoBehaviour
 {
 
     public Sprite nodeSprite;
-    public GameObject[] nodes;
+    //public GameObject[] nodes;
     public GameObject canvas;
     public GameObject nodePrefab;
     public float mapAreaMargin = 250f;
     public float nodeMinDistance = 50f;
-    public int numIslands = 12;
-    public string islandType = "Center";
-
     public GameObject mapObject;
+    public Color defaultColour = Color.white;
+    public Color selectedColour = Color.blue;
+    public float fadeDuration = 0.5f;
+    public float scaleFactor = 1.1f;
+
+    private int numIslands = 12;
     private int nodesToPlace = 0;
     private int placedNodes = 0;
     private int nodeCounter = 0;
     private float delayTime = 0.2f;
     private int oceanNodes = 4;
+    private GameObject lastPlacedNode;
+    private GameObject firstPlacedNode;
+    private GameObject selectedNode;
+    private Vector3 originalSize;
+    private static GameObject currentlySelectedNode;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -126,10 +136,12 @@ public class PlaceTravelNodes : MonoBehaviour
 
 
             }
-            PlaceOceanNodes(mapSize, (nodesToPlace+oceanNodes));
+            PlaceOceanNodes(mapSize);
         }
         Debug.Log(nodeCounter + " total Nodes Saved!");
         Debug.Log("Total Nodes Placed:  " + placedNodes);
+
+        //SelectAndChangeColour();
     }
 
     // Update is called once per frame
@@ -141,9 +153,8 @@ public class PlaceTravelNodes : MonoBehaviour
     void PlaceNode(Vector2 islandPosition, int index)
     {
         GameObject newNode = Instantiate(nodePrefab, canvas.transform);
-
         Image img = newNode.GetComponent<Image>();
-
+        RectTransform rt = newNode.GetComponent<RectTransform>();
 
         if (img != null)
         {
@@ -155,27 +166,124 @@ public class PlaceTravelNodes : MonoBehaviour
             return;
         }
 
-        RectTransform rt = newNode.GetComponent<RectTransform>();
 
         if (rt != null)
         {
             rt.anchoredPosition = islandPosition;
             PlayerPrefs.SetFloat("NodeX_" + index, rt.anchoredPosition.x);
             PlayerPrefs.SetFloat("NodeY_" + index, rt.anchoredPosition.y);
+            
+            if(index == 5 || IsSavedNode(rt.anchoredPosition))
+            {
+                islandPosition.y += 25f;
+                rt.anchoredPosition = islandPosition;
 
+                if(islandPosition.y > (islandPosition.y + 20f))
+                {
+                    islandPosition.y -= 25f;
+                }
+
+               HighlightNode(newNode);
+                
+            }
         }
         else
         {
             Debug.LogError("RectTransform not found on image!");
             return;
         }
+        if(index == 5)
+        {
+            firstPlacedNode = newNode;
+
+        }
+        lastPlacedNode = newNode;
 
         placedNodes++;
         PlayerPrefs.Save();
 
+        Button nodeButton = newNode.GetComponent<Button>();
+
+        if(nodeButton != null)
+        {
+            nodeButton.onClick.AddListener(() => OnNodeClicked(newNode));
+        }
+
     }
 
-    void PlaceOceanNodes(Vector2 mapSize, int indexPos)
+    void OnNodeClicked(GameObject node)
+    {
+        if (currentlySelectedNode != null && currentlySelectedNode != node)
+        {
+            ResetNode(currentlySelectedNode);
+            currentlySelectedNode = null;
+
+        }
+
+        if(currentlySelectedNode != node)
+        {
+            HighlightNode(node);
+            currentlySelectedNode = node;
+
+            SaveSelectedNode(node.GetComponent<RectTransform>().anchoredPosition);
+
+        }
+        else
+        {
+            ResetNode(node);
+            currentlySelectedNode = null;
+        }
+    }
+
+    void HighlightNode(GameObject node)
+    {
+        Image img = node.GetComponent<Image>();
+        RectTransform rt = node.GetComponent<RectTransform>();
+
+        if(img != null)
+        {
+            img.color = selectedColour;
+        }
+
+        if(rt != null)
+        {
+            rt.localScale = rt.localScale * scaleFactor;
+        }
+    }
+
+    void ResetNode(GameObject node)
+    {
+        Image img = node.GetComponent<Image>();
+        RectTransform rt = node.GetComponent<RectTransform>();
+
+        if(img != null)
+        {
+            img.color = defaultColour;
+        }
+
+        if(rt != null)
+        {
+            rt.localScale = rt.localScale / scaleFactor;
+        }
+    }
+
+    bool IsSavedNode(Vector2 position)
+    {
+        float savedX = PlayerPrefs.GetFloat("SavedNodeX");
+        float savedY = PlayerPrefs.GetFloat("SavedNodeY");
+        Vector2 savedPos = new Vector2(savedX, savedY);
+
+        return position == savedPos;
+    }
+
+    void SaveSelectedNode(Vector2 position)
+    {
+        PlayerPrefs.SetFloat("SavedNodeX", position.x);
+        PlayerPrefs.SetFloat("SavedNodeY", position.y);
+        PlayerPrefs.Save();
+    }
+
+    void PlaceOceanNodes(Vector2 mapSize)
     {
         int oceanNodeCounter = 0;
         List<Vector2> placedNodePositions = new List<Vector2>();
@@ -267,5 +375,23 @@ public class PlaceTravelNodes : MonoBehaviour
 
     }
 
+    void SelectAndChangeColour()
+    {
+        if(firstPlacedNode != null)
+        {
+            Image img = firstPlacedNode.GetComponent<Image>();
+            RectTransform rt = firstPlacedNode.GetComponent<RectTransform>();
 
+            if(img != null)
+            {
+                img.color = Color.blue;
+            }
+
+            if(rt != null)
+            {
+                Vector3 newSize = rt.localScale * 1.2f;
+                rt.localScale = newSize;
+            }
+        }
+    }
 }
