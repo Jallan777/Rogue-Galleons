@@ -15,6 +15,10 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Text healthText;
     private int enteredHealth;
 
+    public AudioSource audioSource;
+    public AudioClip deathSound;
+    private bool hasPlayedDeathSound = false;
+
     void Start()
     { 
         enteredHealth = int.Parse(healthText.text);
@@ -32,6 +36,11 @@ public class EnemyHealth : MonoBehaviour
         {
             if (enemyHealthBarFill.fillAmount <= 0)
             {
+                if(!hasPlayedDeathSound)
+                {
+                    audioSource.PlayOneShot(deathSound);
+                    hasPlayedDeathSound = true;
+                }
                 // Disable the target GameObject if the fill amount is zero
                 //enemyShip.SetActive(false);
                 if(enemyShip.transform.position.y < -10 || enemyShip.transform.position.x < -11)
@@ -50,6 +59,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 // Enable the target GameObject if the fill amount is greater than zero
                 enemyShip.SetActive(true);
+                hasPlayedDeathSound = false;
             }
         }
 
