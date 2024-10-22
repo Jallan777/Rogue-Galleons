@@ -1661,6 +1661,7 @@ MonoBehaviour:
   isCoolingDown: 1
   setCoolDownTime: 5
   currentCoolDownTime: 0
+  atkModifer: 1
 --- !u!61 &216459790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7748,6 +7749,7 @@ MonoBehaviour:
   - Combat 3
   - SunsetSea
   - Boss
+  - RockyCove
 --- !u!1 &1350214781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10474,6 +10476,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!114 &1650394087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11771,6 +11776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 146097031}
   healthBarRedFill: {fileID: 391606754}
+  maxHealth: 500
   resultText: {fileID: 293320318}
 --- !u!1 &1978732907
 GameObject:

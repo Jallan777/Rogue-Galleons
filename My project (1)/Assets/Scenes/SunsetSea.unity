@@ -746,6 +746,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!114 &94614655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3562,6 +3565,7 @@ MonoBehaviour:
   - Combat 3
   - SunsetSea
   - Boss
+  - RockyCove
 --- !u!114 &387439428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6890,6 +6894,7 @@ MonoBehaviour:
   isCoolingDown: 1
   setCoolDownTime: 5
   currentCoolDownTime: 0
+  atkModifer: 1
 --- !u!61 &883671717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9846,6 +9851,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!114 &1362745926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13172,6 +13180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 1658704379}
   healthBarRedFill: {fileID: 298249019}
+  maxHealth: 500
   resultText: {fileID: 1081100657}
 --- !u!114 &1680355737
 MonoBehaviour:

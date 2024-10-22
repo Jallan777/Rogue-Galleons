@@ -15330,6 +15330,7 @@ MonoBehaviour:
   - Combat 3
   - SunsetSea
   - Boss
+  - RockyCove
 --- !u!1 &1900464927
 GameObject:
   m_ObjectHideFlags: 0

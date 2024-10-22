@@ -4771,6 +4771,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!114 &617944572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7169,6 +7172,7 @@ MonoBehaviour:
   isCoolingDown: 1
   setCoolDownTime: 5
   currentCoolDownTime: 0
+  atkModifer: 1
 --- !u!95 &931194782
 Animator:
   serializedVersion: 5
@@ -11558,6 +11562,7 @@ MonoBehaviour:
   - Combat 2
   - Combat 3
   - Boss
+  - RockyCove
 --- !u!1 &1371556554
 GameObject:
   m_ObjectHideFlags: 0
@@ -13861,6 +13866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 1322949228}
   healthBarRedFill: {fileID: 728942555}
+  maxHealth: 500
   resultText: {fileID: 934794947}
 --- !u!114 &1729321917
 MonoBehaviour:
@@ -16208,6 +16214,9 @@ MonoBehaviour:
   maxShield: 75
   currentShield: 0
   RechargeTime: 10
+  isBoss: 0
+  success: {fileID: 0}
+  failure: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

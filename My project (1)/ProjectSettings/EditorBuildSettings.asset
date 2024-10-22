@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combat/Boss.unity
     guid: 8ffbe5393624c5e4193b1d0effb0d46e
+  - enabled: 1
+    path: Assets/Scenes/RockyCove.unity
+    guid: 3f3236d6938694949bcf1de51615b051
   m_configObjects: {}
