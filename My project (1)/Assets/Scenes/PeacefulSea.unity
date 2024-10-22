@@ -11557,6 +11557,7 @@ MonoBehaviour:
   - SunsetSea
   - Combat 2
   - Combat 3
+  - Boss
 --- !u!1 &1371556554
 GameObject:
   m_ObjectHideFlags: 0

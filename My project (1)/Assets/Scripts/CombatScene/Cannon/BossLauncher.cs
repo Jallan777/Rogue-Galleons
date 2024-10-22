@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class CannonLauncher : MonoBehaviour
+public class BossLauncher : MonoBehaviour
 {
     private CannonBall ball;
 
@@ -12,16 +12,16 @@ public class CannonLauncher : MonoBehaviour
 
     [Header("Attack Parameters")]
     public bool isActive;
+    public float bossAttackModifier;
     public bool isCoolingDown;
     public float setCoolDownTime;
     public float currentCoolDownTime;
     public Attack attack;
-    public float atkModifer = 1f;
     private int countDownResetMarker;
 
 
     private void Awake() {
-        this.attack = new Attack(20 * atkModifer);
+        this.attack = new Attack(20 * bossAttackModifier);
         this.ball = this.GetComponentInChildren<CannonBall>();
         this.currentCoolDownTime = setCoolDownTime;
         this.isCoolingDown = true;

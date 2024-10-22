@@ -18258,6 +18258,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.0073371334
       objectReference: {fileID: 0}
+    - target: {fileID: 8209194534733166687, guid: f4af9faff778ceb4ba933e66b2c8abd3, type: 3}
+      propertyPath: <InventoryItem>k__BackingField
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
