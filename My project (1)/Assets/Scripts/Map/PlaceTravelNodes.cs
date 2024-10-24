@@ -25,6 +25,7 @@ public class PlaceTravelNodes : MonoBehaviour
     private int nodeCounter = 0;
     private float delayTime = 0.2f;
     private int oceanNodes = 4;
+
     private GameObject lastPlacedNode;
     private GameObject firstPlacedNode;
     private GameObject selectedNode;
@@ -36,6 +37,9 @@ public class PlaceTravelNodes : MonoBehaviour
     void Start()
     {
         StartCoroutine(DelayedCheck());
+
+        SailButtonChanger(false);
+
     }
 
     IEnumerator DelayedCheck()
@@ -226,12 +230,16 @@ public class PlaceTravelNodes : MonoBehaviour
             currentlySelectedNode = node;
 
             SaveSelectedNode(node.GetComponent<RectTransform>().anchoredPosition);
+            SailButtonChanger(true);
 
+            
         }
         else
         {
             ResetNode(node);
             currentlySelectedNode = null;
+
+            SailButtonChanger(false);
         }
     }
 
@@ -375,6 +383,40 @@ public class PlaceTravelNodes : MonoBehaviour
 
     }
 
+    void SailButtonChanger(bool isClickable)
+    {
+        GameObject sailButton = GameObject.Find("MapPopup/MapButtons/SailButton");
+
+        if(sailButton != null)
+        {
+            Button sButton = sailButton.GetComponent<Button>();
+            Image buttonImage = sailButton.GetComponent<Image>();
+
+            if(sButton != null && buttonImage != null)
+            {
+                if(isClickable)
+                {
+                    sButton.interactable = true;
+                    buttonImage.color = new Color(buttonImage.color.r, buttonImage.color.g, buttonImage.color.b, 1f);
+
+                }
+                else
+                {
+                    sButton.interactable = false;
+                    buttonImage.color = new Color(buttonImage.color.r, buttonImage.color.g, buttonImage.color.b, 0.5f);
+
+                }
+            } 
+            else
+            {
+                Debug.LogError("SailButton has no image or button!");
+            }
+        }
+        else
+        {
+            Debug.LogError("SailButton not found!");
+        }
+    }
     void SelectAndChangeColour()
     {
         if(firstPlacedNode != null)

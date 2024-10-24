@@ -122,6 +122,7 @@ namespace Inventory.UI
 
         public void Show()
         {
+            //actionPanel.Toggle(true);
             gameObject.SetActive(true);
 
             ResetSelection();
@@ -161,7 +162,7 @@ namespace Inventory.UI
 
         public void Hide()
         {
-            actionPanel.Toggle(false);
+            //actionPanel.Toggle(false);
             gameObject.SetActive(false);
             ResetDraggedItem();
         }

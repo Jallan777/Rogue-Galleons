@@ -178,6 +178,7 @@ namespace Inventory
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
                     inventoryUI.Show(); // Show the inventory UI if it is currently hidden
+
                     foreach (var item in inventoryData.GetCurrentInventoryState()) // Update the UI with the current inventory state
                     {
                         inventoryUI.UpdateData(item.Key,
@@ -185,9 +186,14 @@ namespace Inventory
                             item.Value.quantity);
                     }
                 }
-                else
+            }
+
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                if (inventoryUI.isActiveAndEnabled == true)
                 {
                     inventoryUI.Hide(); // Hide the inventory UI if it is currently visible
+
                 }
             }
         }
