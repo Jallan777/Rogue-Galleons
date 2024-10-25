@@ -7617,7 +7617,7 @@ MonoBehaviour:
   maxShield: 50
   currentShield: 0
   RechargeTime: 20
-  isBoss: 1
+  isBoss: 0
   success: {fileID: 533777218}
   failure: {fileID: 1424638591}
 --- !u!68 &927309024

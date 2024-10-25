@@ -149,7 +149,12 @@ public class Ship : MonoBehaviour
 
     private void Update()
     {
-        //currentHealth = PlayerPrefs.GetFloat("PlayerHealth");
+        //
+
+        if(shipType != ShipType.ENEMY)
+        {
+            currentHealth = PlayerPrefs.GetFloat("PlayerHealth");
+        }
 
         Debug.Log("Player CURRENT Health Amount: " + currentHealth);
 
