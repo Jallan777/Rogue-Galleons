@@ -38,7 +38,7 @@ namespace Inventory.UI
         private void Awake()
         {
             Hide();
-            mouseFollower.Toggle(false);
+            //mouseFollower.Toggle(false);
             itemDescription.ResetDescription();
         }
         public void InitializeInventoryUI(int inventorysize)
@@ -137,17 +137,17 @@ namespace Inventory.UI
 
 
         public void AddAction(string actionName, Action performAction)
-        { 
-          actionPanel.AddButon(actionName, performAction);
-        
+        {
+            actionPanel.AddButon(actionName, performAction);
+
         }
 
         public void ShowItemAction(int itemIndex)
-        { 
-        
-        actionPanel.Toggle(true);
+        {
+
+            actionPanel.Toggle(true);
             actionPanel.transform.position = listOfUIItems[itemIndex].transform.position;
-        
+
         }
 
 
@@ -162,7 +162,9 @@ namespace Inventory.UI
 
         public void Hide()
         {
-            //actionPanel.Toggle(false);
+            mouseFollower.Toggle(false);
+
+            actionPanel.Toggle(false);
             gameObject.SetActive(false);
             ResetDraggedItem();
         }
